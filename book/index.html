@@ -6,6 +6,7 @@
   <title>Book a Cleaning | Vicky's Professional Maid Services</title>
   <meta name="description" content="Book your professional cleaning service today. Call (626) 378-8465 or fill out our form for a free quote. Serving Los Angeles and the San Gabriel Valley." />
   <link rel="canonical" href="https://vickys.vercel.app/book" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>&#x1f9f9;</text></svg>" />
   <meta property="og:title" content="Book a Cleaning | Vicky's Professional Maid Services" />
   <meta property="og:description" content="Book your professional cleaning service today. Call (626) 378-8465 or fill out our form for a free quote." />
   <meta property="og:type" content="website" />
@@ -147,29 +148,54 @@
       </div>
     </section>
 
-    <!-- ==================== CONTACT METHODS ==================== -->
+    <!-- ==================== SQUARE APPOINTMENTS (PRIMARY CTA) ==================== -->
     <section class="px-6 pb-12">
-      <div class="max-w-3xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6">
-        <a href="tel:6263788465" class="bg-surface-container-lowest p-8 rounded-3xl editorial-shadow border border-outline-variant/10 flex flex-col items-center text-center gap-4 hover:-translate-y-1 transition-transform duration-300 group">
-          <div class="w-16 h-16 rounded-full bg-secondary-container/30 flex items-center justify-center">
-            <span class="material-symbols-outlined text-secondary text-3xl" style="font-variation-settings: 'FILL' 1;">call</span>
+      <div class="max-w-3xl mx-auto">
+        <!-- Square Appointments booking link — REPLACE THE URL BELOW with your Square booking link -->
+        <a href="https://square.site/book/XXXXXX/vickys-professional-maid-services" target="_blank" rel="noopener" class="block bg-primary rounded-3xl p-8 md:p-10 text-center relative overflow-hidden group hover:scale-[1.01] transition-transform duration-300 shadow-xl shadow-primary/20">
+          <div class="relative z-10">
+            <div class="w-16 h-16 rounded-full bg-white/20 flex items-center justify-center mx-auto mb-4">
+              <span class="material-symbols-outlined text-white text-3xl" style="font-variation-settings: 'FILL' 1;">calendar_month</span>
+            </div>
+            <h2 class="font-headline text-2xl md:text-3xl font-extrabold text-white mb-2">Book Online Instantly</h2>
+            <p class="text-on-primary-container text-sm md:text-base mb-6 max-w-md mx-auto">Pick your service, choose a time that works, and confirm in under 60 seconds.</p>
+            <span class="inline-flex items-center gap-2 bg-secondary text-white px-8 py-4 rounded-full font-headline font-bold text-lg shadow-lg">
+              Schedule on Square
+              <span class="material-symbols-outlined">arrow_forward</span>
+            </span>
           </div>
-          <div>
-            <h3 class="font-headline font-bold text-primary text-lg mb-1">Call Us</h3>
-            <p class="text-primary font-bold text-xl group-hover:text-secondary transition-colors">(626) 378-8465</p>
-            <p class="text-on-surface-variant text-sm mt-2">Available Mon-Sat, 8am-6pm</p>
-          </div>
+          <div class="absolute top-0 right-0 w-64 h-64 bg-white/5 rounded-full -translate-y-1/2 translate-x-1/2 blur-2xl"></div>
         </a>
-        <a href="mailto:support@vickys.com" class="bg-surface-container-lowest p-8 rounded-3xl editorial-shadow border border-outline-variant/10 flex flex-col items-center text-center gap-4 hover:-translate-y-1 transition-transform duration-300 group">
-          <div class="w-16 h-16 rounded-full bg-primary-fixed/40 flex items-center justify-center">
-            <span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">mail</span>
-          </div>
-          <div>
-            <h3 class="font-headline font-bold text-primary text-lg mb-1">Email Us</h3>
-            <p class="text-primary font-bold text-xl group-hover:text-secondary transition-colors">support@vickys.com</p>
-            <p class="text-on-surface-variant text-sm mt-2">We respond within 2 hours</p>
-          </div>
-        </a>
+
+        <div class="flex items-center gap-4 my-8">
+          <div class="flex-1 h-px bg-outline-variant/30"></div>
+          <span class="text-on-surface-variant text-sm font-bold uppercase tracking-widest">or contact us directly</span>
+          <div class="flex-1 h-px bg-outline-variant/30"></div>
+        </div>
+
+        <!-- Phone / Email cards -->
+        <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+          <a href="tel:6263788465" class="bg-surface-container-lowest p-8 rounded-3xl editorial-shadow border border-outline-variant/10 flex flex-col items-center text-center gap-4 hover:-translate-y-1 transition-transform duration-300 group">
+            <div class="w-16 h-16 rounded-full bg-secondary-container/30 flex items-center justify-center">
+              <span class="material-symbols-outlined text-secondary text-3xl" style="font-variation-settings: 'FILL' 1;">call</span>
+            </div>
+            <div>
+              <h3 class="font-headline font-bold text-primary text-lg mb-1">Call Us</h3>
+              <p class="text-primary font-bold text-xl group-hover:text-secondary transition-colors">(626) 378-8465</p>
+              <p class="text-on-surface-variant text-sm mt-2">Available Mon-Sat, 8am-6pm</p>
+            </div>
+          </a>
+          <a href="mailto:support@vickys.com" class="bg-surface-container-lowest p-8 rounded-3xl editorial-shadow border border-outline-variant/10 flex flex-col items-center text-center gap-4 hover:-translate-y-1 transition-transform duration-300 group">
+            <div class="w-16 h-16 rounded-full bg-primary-fixed/40 flex items-center justify-center">
+              <span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">mail</span>
+            </div>
+            <div>
+              <h3 class="font-headline font-bold text-primary text-lg mb-1">Email Us</h3>
+              <p class="text-primary font-bold text-xl group-hover:text-secondary transition-colors">support@vickys.com</p>
+              <p class="text-on-surface-variant text-sm mt-2">We respond within 2 hours</p>
+            </div>
+          </a>
+        </div>
       </div>
     </section>
 
@@ -180,8 +206,8 @@
         <!-- FORM (2/3 on desktop) -->
         <div class="lg:col-span-2">
           <div class="bg-surface-container-low rounded-3xl p-6 md:p-8">
-            <h2 class="font-headline text-2xl font-extrabold text-primary mb-2">Request a Quote</h2>
-            <p class="text-on-surface-variant text-sm mb-8">Fill out the form below and we'll get back to you with a personalized quote.</p>
+            <h2 class="font-headline text-2xl font-extrabold text-primary mb-2">Request a Custom Quote</h2>
+            <p class="text-on-surface-variant text-sm mb-8">Need a specialized service or have specific requirements? Fill out the form below and we'll get back to you with a personalized quote.</p>
 
             <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6" id="booking-form">
               <!-- Web3Forms access key
@@ -391,10 +417,10 @@
   <footer class="bg-[#501F72] text-white pt-16 pb-8">
     <div class="flex flex-col md:flex-row justify-between items-start md:items-center px-8 w-full max-w-7xl mx-auto mb-12 border-b border-white/10 pb-12">
       <div class="mb-8 md:mb-0">
-        <div class="flex items-center gap-2 mb-4">
+        <a href="/" class="flex items-center gap-2 mb-4">
           <span class="material-symbols-outlined text-[#63DDA2]">clean_hands</span>
           <span class="text-2xl font-bold font-headline">Vicky's</span>
-        </div>
+        </a>
         <p class="text-white/70 max-w-xs font-body text-sm tracking-wide">Professional maid services that bring the luxury of a pristine home to your everyday life.</p>
       </div>
       <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -406,7 +432,7 @@
         </div>
         <div class="flex flex-col gap-4">
           <span class="font-bold text-white mb-2">Company</span>
-          <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="/">About Us</a>
+          <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="/">Home</a>
           <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="/reviews/">Reviews</a>
         </div>
         <div class="flex flex-col gap-4">
@@ -422,10 +448,10 @@
       </div>
     </div>
     <div class="flex flex-col md:flex-row justify-between items-center px-8 w-full max-w-7xl mx-auto text-[#FFF7FD]/50 font-body text-xs uppercase tracking-widest">
-      <p>&copy; 2025 Vicky's Professional Maid Services. All rights reserved.</p>
+      <p>&copy; 2026 Vicky's Professional Maid Services. All rights reserved.</p>
       <div class="flex gap-6 mt-4 md:mt-0">
-        <a class="hover:text-[#63DDA2] transition-colors" href="#">Instagram</a>
-        <a class="hover:text-[#63DDA2] transition-colors" href="#">Facebook</a>
+        <a class="hover:text-[#63DDA2] transition-colors" href="https://instagram.com">Instagram</a>
+        <a class="hover:text-[#63DDA2] transition-colors" href="https://facebook.com">Facebook</a>
       </div>
     </div>
   </footer>
