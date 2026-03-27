@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vicky's Professional Maid Services</title>
+  <meta name="description" content="Professional cleaning, personally done. Experience the gold standard of cleanliness with Vicky's. Residential, commercial, and specialty cleaning services." />
+  <meta property="og:title" content="Vicky's Professional Maid Services" />
+  <meta property="og:description" content="Professional cleaning, personally done. We transform your space into a sanctuary of pristine comfort." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#501f72",
+            "on-primary": "#ffffff",
+            "primary-container": "#69388b",
+            "on-primary-container": "#dfadff",
+            "primary-fixed": "#f3daff",
+            "primary-fixed-dim": "#e3b5ff",
+            "secondary": "#006d3d",
+            "on-secondary": "#ffffff",
+            "secondary-container": "#97f3b5",
+            "on-secondary-container": "#047240",
+            "secondary-fixed": "#9af6b8",
+            "secondary-fixed-dim": "#7ed99e",
+            "on-secondary-fixed": "#00210f",
+            "on-secondary-fixed-variant": "#00522d",
+            "tertiary": "#004125",
+            "tertiary-container": "#005b36",
+            "on-tertiary-container": "#74d49b",
+            "tertiary-fixed-dim": "#7adaa1",
+            "surface": "#fff7fd",
+            "on-surface": "#1e1a20",
+            "surface-variant": "#e9e0e8",
+            "on-surface-variant": "#4c444f",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#faf1f9",
+            "surface-container": "#f4ebf3",
+            "surface-container-high": "#efe5ee",
+            "surface-container-highest": "#e9e0e8",
+            "surface-dim": "#e0d7df",
+            "surface-tint": "#7a489c",
+            "outline": "#7d7481",
+            "outline-variant": "#cfc3d1",
+            "inverse-surface": "#332f35",
+            "inverse-on-surface": "#f7eef6",
+            "inverse-primary": "#e3b5ff",
+            "error": "#ba1a1a",
+            "on-error": "#ffffff",
+            "error-container": "#ffdad6",
+            "on-error-container": "#93000a",
+            "background": "#fff7fd",
+            "on-background": "#1e1a20",
+          },
+          fontFamily: {
+            headline: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            body: ['"Manrope"', 'system-ui', 'sans-serif'],
+          },
+          borderRadius: {
+            '4xl': '2rem',
+            '5xl': '2.5rem',
+            '6xl': '3rem',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    body { font-family: "Manrope", system-ui, sans-serif; }
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    .editorial-shadow { box-shadow: 0 8px 40px rgba(80,31,114,0.08); }
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    html { scroll-padding-top: 80px; }
+  </style>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+
+  <!-- ==================== NAVBAR ==================== -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-outline-variant/20">
+    <nav class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <div class="flex items-center gap-2">
+        <span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">clean_hands</span>
+        <span class="text-xl font-bold font-headline text-primary">Vicky's</span>
+      </div>
+      <div class="hidden md:flex items-center gap-8">
+        <a class="text-on-surface-variant font-medium hover:text-primary transition-colors" href="#services">Services</a>
+        <a class="text-on-surface-variant font-medium hover:text-primary transition-colors" href="#about">About</a>
+        <a class="text-on-surface-variant font-medium hover:text-primary transition-colors" href="#results">Results</a>
+        <a class="text-on-surface-variant font-medium hover:text-primary transition-colors" href="#reviews">Reviews</a>
+      </div>
+      <a href="#book" class="bg-primary text-on-primary px-6 py-2.5 rounded-full font-headline font-bold text-sm tracking-wide active:scale-95 duration-150 shadow-lg shadow-primary/20 transition-transform">
+        Book Now
+      </a>
+    </nav>
+  </header>
+
+  <main class="pt-20">
+
+    <!-- ==================== HERO ==================== -->
+    <section class="relative min-h-[85vh] flex items-center overflow-hidden px-6 lg:px-12">
+      <div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <div class="lg:col-span-7 z-10">
+          <div class="inline-flex items-center gap-2 bg-secondary-container/30 px-4 py-2 rounded-full mb-6">
+            <span class="material-symbols-outlined text-on-secondary-container text-sm" style="font-variation-settings: 'FILL' 1;">sparkle</span>
+            <span class="text-on-secondary-container font-body text-xs font-bold tracking-widest uppercase">Trusted Home Care</span>
+          </div>
+          <h1 class="text-5xl lg:text-7xl font-headline font-extrabold text-primary leading-[1.1] mb-6 tracking-tight">
+            Professional Cleaning, <br/>
+            <span class="text-secondary italic">Personally Done.</span>
+          </h1>
+          <p class="text-on-surface-variant text-lg lg:text-xl max-w-xl mb-10 leading-relaxed">
+            Experience the gold standard of cleanliness with Vicky's. We don't just clean; we transform your space into a sanctuary of pristine comfort.
+          </p>
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a href="#book" class="bg-primary text-on-primary px-8 py-4 rounded-full font-headline font-bold text-lg hover:bg-primary-container transition-colors shadow-xl shadow-primary/20 text-center">
+              Book Now
+            </a>
+            <a href="#services" class="bg-surface-container-highest text-primary px-8 py-4 rounded-full font-headline font-bold text-lg hover:bg-surface-container-high transition-colors text-center">
+              View Pricing
+            </a>
+          </div>
+        </div>
+        <div class="lg:col-span-5 relative">
+          <div class="relative w-full aspect-[4/5] rounded-4xl overflow-hidden shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-700">
+            <img class="w-full h-full object-cover" alt="Professional cleaner in a bright modern home" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBU1ZY3Rcck8P6qhgTLWdcJmyj2fVanqyHDnQgwHm3T0v9t7prabcvFQ0IoRL2fgHExfvxIrlwViU-tufufph92CEbTiQMmUOYy_1sx8v8zNckDD4vrZYOs2O83x_F9LsGwFUW8IGSFS3wyS0OT9OUaK-VDhJ0DQzQKVdfxPkYQwOZE7DBCTdM8aL_bcux_I4TqJiLibqPEBqT7b1DuSM7Qo2T1kGpKLetLtMtTA5FlHZ-y9J7Hp9dirW7bpge2kTd-3vLct9BcfWU" />
+            <div class="absolute inset-0 bg-gradient-to-t from-primary/30 to-transparent"></div>
+          </div>
+          <div class="absolute -bottom-6 -left-6 bg-white p-6 rounded-2xl shadow-xl max-w-[200px] hidden sm:block">
+            <div class="flex gap-1 text-secondary mb-2">
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+              <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+            </div>
+            <p class="text-xs font-bold text-on-surface">"Impeccable service, every single time!"</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== STATS BAR ==================== -->
+    <section class="bg-surface-container-low py-12">
+      <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="flex items-center gap-6 p-8 bg-surface-container-lowest rounded-3xl shadow-sm border border-outline-variant/10">
+          <span class="material-symbols-outlined text-4xl text-secondary">house</span>
+          <div>
+            <h3 class="text-3xl font-headline font-extrabold text-primary">500+</h3>
+            <p class="text-on-surface-variant font-medium">Happy Homes</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-6 p-8 bg-surface-container-lowest rounded-3xl shadow-sm border border-outline-variant/10">
+          <span class="material-symbols-outlined text-4xl text-secondary" style="font-variation-settings: 'FILL' 1;">star</span>
+          <div>
+            <h3 class="text-3xl font-headline font-extrabold text-primary">4.9 Star</h3>
+            <p class="text-on-surface-variant font-medium">Average Rating</p>
+          </div>
+        </div>
+        <div class="flex items-center gap-6 p-8 bg-surface-container-lowest rounded-3xl shadow-sm border border-outline-variant/10">
+          <span class="material-symbols-outlined text-4xl text-secondary">shield</span>
+          <div>
+            <h3 class="text-3xl font-headline font-extrabold text-primary">100%</h3>
+            <p class="text-on-surface-variant font-medium">Satisfaction Guarantee</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SERVICES / PRICING ==================== -->
+    <section class="bg-surface-container-low py-24" id="services">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-20">
+          <h2 class="font-headline text-4xl font-extrabold text-primary mb-4">Precision Cleaning Packages</h2>
+          <p class="text-on-surface-variant max-w-2xl mx-auto">Tailored solutions designed for every square inch of your life. Choose the depth of care your space deserves.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+          <!-- Standard Clean -->
+          <div class="bg-surface-container-lowest p-8 rounded-4xl editorial-shadow flex flex-col group hover:-translate-y-2 transition-transform duration-500">
+            <div class="mb-8">
+              <span class="material-symbols-outlined text-4xl text-secondary mb-4">eco</span>
+              <h3 class="font-headline text-2xl font-bold text-primary mb-2">Standard Clean</h3>
+              <p class="text-on-surface-variant text-sm">Essential maintenance for active households.</p>
+            </div>
+            <div class="mb-8">
+              <span class="text-4xl font-extrabold text-primary">$120</span>
+              <span class="text-on-surface-variant">/ visit</span>
+            </div>
+            <ul class="space-y-4 mb-10 flex-grow">
+              <li class="flex items-center gap-3 text-on-surface-variant">
+                <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+                Dusting &amp; Surface Wiping
+              </li>
+              <li class="flex items-center gap-3 text-on-surface-variant">
+                <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+                Vacuuming &amp; Mopping
+              </li>
+              <li class="flex items-center gap-3 text-on-surface-variant">
+                <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+                Bathroom Sanitization
+              </li>
+              <li class="flex items-center gap-3 text-on-surface-variant">
+                <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+                Trash Removal
+              </li>
+            </ul>
+            <a href="#book" class="w-full py-4 rounded-xl border-2 border-primary/10 text-primary font-bold hover:bg-primary hover:text-white transition-all duration-300 text-center block">Select Standard</a>
+          </div>
+          <!-- Deep Clean (Featured) -->
+          <div class="bg-primary-container p-8 rounded-4xl editorial-shadow flex flex-col relative overflow-hidden group hover:-translate-y-2 transition-transform duration-500">
+            <div class="absolute top-6 right-6">
+              <span class="bg-secondary text-white text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest">Most Popular</span>
+            </div>
+            <div class="mb-8">
+              <span class="material-symbols-outlined text-4xl text-on-tertiary-container mb-4">auto_awesome</span>
+              <h3 class="font-headline text-2xl font-bold text-white mb-2">Deep Clean</h3>
+              <p class="text-on-primary-container text-sm">A thorough restoration for your home.</p>
+            </div>
+            <div class="mb-8">
+              <span class="text-4xl font-extrabold text-white">$240</span>
+              <span class="text-on-primary-container">/ visit</span>
+            </div>
+            <ul class="space-y-4 mb-10 flex-grow">
+              <li class="flex items-center gap-3 text-white">
+                <span class="material-symbols-outlined text-secondary-container text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Baseboards &amp; Door Frames
+              </li>
+              <li class="flex items-center gap-3 text-white">
+                <span class="material-symbols-outlined text-secondary-container text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Inside Oven &amp; Microwave
+              </li>
+              <li class="flex items-center gap-3 text-white">
+                <span class="material-symbols-outlined text-secondary-container text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Window Tracks &amp; Blinds
+              </li>
+              <li class="flex items-center gap-3 text-white">
+                <span class="material-symbols-outlined text-secondary-container text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Deep Grout Scrubbing
+              </li>
+            </ul>
+            <a href="#book" class="w-full py-4 rounded-xl bg-white text-primary font-bold hover:bg-secondary hover:text-white transition-all duration-300 text-center block">Book Deep Clean</a>
+          </div>
+          <!-- Specialized -->
+          <div class="bg-surface-container-lowest p-8 rounded-4xl editorial-shadow flex flex-col group hover:-translate-y-2 transition-transform duration-500">
+            <div class="mb-8">
+              <span class="material-symbols-outlined text-4xl text-secondary mb-4">business_center</span>
+              <h3 class="font-headline text-2xl font-bold text-primary mb-2">Specialized Services</h3>
+              <p class="text-on-surface-variant text-sm">High-standard commercial cleaning.</p>
+            </div>
+            <div class="mb-8">
+              <span class="text-4xl font-extrabold text-primary">Custom</span>
+              <span class="text-on-surface-variant">/ quote</span>
+            </div>
+            <ul class="space-y-4 mb-10 flex-grow">
+              <li class="flex items-center gap-3 text-on-surface-variant">
+                <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+                Office Sanitization
+              </li>
+              <li class="flex items-center gap-3 text-on-surface-variant">
+                <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+                Post-Construction Cleanup
+              </li>
+              <li class="flex items-center gap-3 text-on-surface-variant">
+                <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+                Move-In / Move-Out
+              </li>
+              <li class="flex items-center gap-3 text-on-surface-variant">
+                <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+                Event Preparation
+              </li>
+            </ul>
+            <a href="#book" class="w-full py-4 rounded-xl border-2 border-primary/10 text-primary font-bold hover:bg-primary hover:text-white transition-all duration-300 text-center block">Get a Quote</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== ABOUT / WHY CHOOSE US ==================== -->
+    <section class="py-24 px-6 overflow-hidden" id="about">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+        <div class="relative">
+          <div class="grid grid-cols-2 gap-4">
+            <div class="pt-12">
+              <img class="rounded-2xl w-full aspect-square object-cover shadow-lg" alt="Cleaning supplies organized neatly" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAaVQJ7qUMI_IUvjol7ZBFg1rxD_ttQXrQDMV0FiwgDYeVfls7pIvm5RU4nhjtmbk44mgMD-sh0IBd-FSNFP7hGqXMHngoHGd_ppeSv3Tc1jXG7-aj6jZCxpA1ZA64rPmhcMpfvLD-l9HMFxhw2Uug3dTPyje5hJqKPf11fy5H2LDRNHc20Qs1HLULfcFc0Ltx6h21A4mDjgsNLpqNGzIZ6WT_TruT2Thr2WeVfsmDxWpBKlil0FP6OrOOVLBD68UCUYJfBye6wECA" />
+            </div>
+            <div>
+              <img class="rounded-2xl w-full aspect-[4/5] object-cover shadow-lg" alt="Freshly made bed in clean bedroom" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCB5H8hNEMY6ldoDWAHb-dlfe6xXuNhgQS_phNUnXL0gelfj8t6yR5bKhmbBNoKN6bce-mI5WlFX5FEwayHLNaMZ0_Vs5Pon_TK4DwEP7M7BJnQ7CCy-xLxgkPKtri7Un6Aa9mG4UIMnc6GuHAKRlSTbrmVtu6pIQTdxexc6gswNM1KxYDcdt5G1oRzzpdvx6GvLvhElEIvlIrxmO0MCv5lu197I0oClETYzqaE0zF6Iz4Dpf4MBQgDgAXnJEXb7vYFcBcOzNNN3WE" />
+            </div>
+          </div>
+          <div class="absolute -z-10 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[120%] h-[120%] bg-primary-fixed/30 rounded-full blur-3xl"></div>
+        </div>
+        <div class="space-y-8">
+          <h2 class="text-4xl lg:text-5xl font-headline font-extrabold text-primary leading-tight">We Care About Your Space As Much As You Do</h2>
+          <p class="text-on-surface-variant text-lg leading-relaxed">
+            At Vicky's Professional Maid Services, we believe a clean environment is the foundation of a happy life. Whether it's your personal sanctuary, a bustling corporate office, or a local business, our dedicated team brings meticulous attention to detail and a personal touch to every square inch.
+          </p>
+          <ul class="space-y-4">
+            <li class="flex items-center gap-4">
+              <div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center flex-shrink-0">
+                <span class="material-symbols-outlined text-on-secondary-container text-sm" style="font-variation-settings: 'wght' 700;">check</span>
+              </div>
+              <span class="font-bold text-on-surface">Trained &amp; Vetted Professionals</span>
+            </li>
+            <li class="flex items-center gap-4">
+              <div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center flex-shrink-0">
+                <span class="material-symbols-outlined text-on-secondary-container text-sm" style="font-variation-settings: 'wght' 700;">check</span>
+              </div>
+              <span class="font-bold text-on-surface">Eco-Friendly Cleaning Products</span>
+            </li>
+            <li class="flex items-center gap-4">
+              <div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center flex-shrink-0">
+                <span class="material-symbols-outlined text-on-secondary-container text-sm" style="font-variation-settings: 'wght' 700;">check</span>
+              </div>
+              <span class="font-bold text-on-surface">100% Satisfaction Guarantee</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== WHY CHOOSE US (BENTO) ==================== -->
+    <section class="py-24 px-6 max-w-7xl mx-auto">
+      <h2 class="font-headline text-4xl font-extrabold text-primary mb-16 text-center">Why Elite Spaces Trust Vicky's</h2>
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[600px]">
+        <div class="md:col-span-8 bg-surface-container rounded-3xl p-10 flex flex-col justify-between overflow-hidden relative group">
+          <div class="z-10">
+            <h4 class="font-headline text-3xl font-bold text-primary mb-4">Unwavering Professionalism</h4>
+            <p class="text-on-surface-variant max-w-md leading-relaxed">Our maids are more than cleaners; they are technicians of the home. Every team member undergoes rigorous training and comprehensive background checks.</p>
+          </div>
+          <div class="mt-8 flex gap-4 overflow-x-auto pb-4 no-scrollbar">
+            <div class="flex-shrink-0 bg-white px-6 py-4 rounded-2xl shadow-sm flex items-center gap-3">
+              <span class="material-symbols-outlined text-secondary">verified_user</span>
+              <span class="font-bold text-sm">Bonded &amp; Insured</span>
+            </div>
+            <div class="flex-shrink-0 bg-white px-6 py-4 rounded-2xl shadow-sm flex items-center gap-3">
+              <span class="material-symbols-outlined text-secondary">military_tech</span>
+              <span class="font-bold text-sm">100h+ Training</span>
+            </div>
+          </div>
+          <img class="absolute -right-20 bottom-0 h-3/4 object-contain opacity-20 md:opacity-100 group-hover:scale-105 transition-transform duration-700 pointer-events-none" alt="Professional cleaner" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDv5ujdbwEcixt4aGNqrDmIIfGI2H-iF9O1W4jaMD2vh1gn63z2vF9oE1CSktUyihzeHGmyPTVprjtmgUpnlWBlozYgzJ5D6zPK9QMt4T12cZLCaDpvbZ9Kr3YEPuSXGpSMbU6qui_ltl0vaLkn3Z_IZvMTItkkdhei-Hv5SO8IPeuooLetPv60k0fITQA-rx00UOGUiVnLUuOvhyFgbM7erP7qPzmGWjy95yYbbCaev3K9q8gH4opqy_b_8uNCqPxh_FpSsubL8rM" />
+        </div>
+        <div class="md:col-span-4 bg-primary p-10 rounded-3xl flex flex-col justify-center text-white text-center">
+          <span class="material-symbols-outlined text-6xl mb-6 text-secondary-container">schedule</span>
+          <h4 class="font-headline text-3xl font-bold mb-4">Precision Reliability</h4>
+          <p class="text-on-primary-container leading-relaxed">We guarantee arrival within a 15-minute window or your next clean is on us.</p>
+        </div>
+        <div class="md:col-span-4 bg-secondary p-10 rounded-3xl flex flex-col justify-end text-white overflow-hidden relative">
+          <div class="z-10">
+            <h4 class="font-headline text-2xl font-bold mb-2">Botanical Care</h4>
+            <p class="text-white/80 text-sm">Only non-toxic, pet-safe, and biodegradable products enter your home.</p>
+          </div>
+          <span class="material-symbols-outlined absolute -top-10 -right-10 text-[200px] opacity-10">nest_eco_leaf</span>
+        </div>
+        <div class="md:col-span-8 bg-surface-container-highest p-10 rounded-3xl flex items-center gap-8">
+          <div class="flex-shrink-0 w-24 h-24 rounded-full bg-white flex items-center justify-center editorial-shadow">
+            <span class="text-3xl font-black text-secondary">100%</span>
+          </div>
+          <div>
+            <h4 class="font-headline text-2xl font-bold text-primary mb-2">The Vicky Guarantee</h4>
+            <p class="text-on-surface-variant">If any area is overlooked, we return within 24 hours to rectify it -- no questions asked. Your peace of mind is our primary product.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== BEFORE & AFTER ==================== -->
+    <section class="max-w-7xl mx-auto px-6 py-24" id="results">
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-12 gap-4">
+        <div class="max-w-xl">
+          <h2 class="text-4xl font-headline font-extrabold text-primary mb-4 tracking-tight">The Art of Transformation</h2>
+          <p class="text-on-surface-variant text-lg">We turn chaos into clarity. Browse our portfolio of pristine transitions.</p>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-8">
+        <!-- Kitchen (Large) -->
+        <div class="md:col-span-7 bg-surface-container-high rounded-5xl p-4 overflow-hidden group">
+          <div class="relative flex flex-col h-full gap-4">
+            <div class="grid grid-cols-2 gap-4 h-[400px]">
+              <div class="relative rounded-2xl overflow-hidden">
+                <img alt="Kitchen before cleaning" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuANQ_6T35HScJoPdAP2QEXM0DtyAY4LSYjoS5VKMDM7n5NrwLnOaSItHmNrnaWlxMeUr-ZJln3nRUCfMqYJrjzxraM1ilragHciltKf82SiKIFftA37TwJmgODPxX47vu810JqM72RX4h3K92q4xtCwdAOGR4JIurCJrbUqDfBwVvrWTCk8-LPYkqsxheIc8EiiSMG80DdhwPB8a7KYrRly1BaM0z-u9TnY-611i_lR0yV9LxHTb7zhAAtCvQCwzN_YmncHLKQqkzg" />
+                <div class="absolute top-4 left-4 bg-on-surface/60 backdrop-blur-md text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-tighter">Before</div>
+              </div>
+              <div class="relative rounded-2xl overflow-hidden border-4 border-secondary/20">
+                <img alt="Kitchen after cleaning" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRoqYVUeD-wWFJzJVYZtmbCwAosTSfWZ0pYV7GzPIOIjeMFCmhf-8LgR8sIl1yelSao_RzMj6O2LXUuXQM2gQhOMkmqKkpni8k3RlAg7MM0mO_Lbx9Rk5HM8nGY4FPydId0x2H5UAOZ7syLUNE9pYtXVkLwrcYphxSnzL1g79PHtnCaCmNQOmj2lTq6vt3fY7y_6JHW2-ZKclgkXZdw8lg2MvfNT-6-zD-M2zL_YGA50BhoUhLxu6My2IczenOqK44nPllUjvVx18" />
+                <div class="absolute top-4 left-4 bg-secondary/80 backdrop-blur-md text-white px-3 py-1 rounded-full text-xs font-bold uppercase tracking-tighter">After</div>
+              </div>
+            </div>
+            <div class="px-4 py-2">
+              <h4 class="text-xl font-bold text-primary">Gourmet Kitchen Deep Clean</h4>
+              <p class="text-on-surface-variant text-sm">Removal of grease buildup, detailed sanitization, and organizational layout.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Living Room + Quote -->
+        <div class="md:col-span-5 flex flex-col gap-8">
+          <div class="bg-surface-container-high rounded-5xl p-4 group">
+            <div class="grid grid-cols-2 gap-4 h-[250px]">
+              <div class="relative rounded-2xl overflow-hidden">
+                <img alt="Living room before" class="w-full h-full object-cover grayscale opacity-80" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBWhpuHymd77nHXWs5l5HLb-pqIst10jAolUTCHPj29QuiAaOqUo1KetGwN0yyfHRwuG3Jo3PgQhxRokkuyypqUIkm3u0xKN7QJ-D9mGhPTs2K73G5Ra2pbVioZXdTWvul51oDPsil_5CJisnFhS-rzUr3rbeyx1AOUI8JorluN_9n_tq24fKD7G1davR93qAul9EpaXFF95adH8mb5Ou0HlB89Aj5ZtXNTxtwGnwf1x-9HyMSfOGWMvdpC_3k3xOpcovAs7R6K_Ys" />
+                <div class="absolute inset-0 bg-primary/10"></div>
+              </div>
+              <div class="relative rounded-2xl overflow-hidden">
+                <img alt="Living room after" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDd7g7cO-BXpPEYQC5nL7HCnUl81V8Sa8Dbjh-ai-n9nf7Le0C_5St34cK3-n0VKcshAp3YyIyN4raLnzmXl8AJrRZl6PCztYPsrkBAUd5il_QBjLAA3dxxCpnAUpQP9cWANAYIcXF1cPrEsWAWES5pFBvG8vdzE62SzE6KuhrpycGr7p6kan8X3Q9C6CUQZzf-De2fYdpj2Q_NJEildhh3mpxDV8zh8Q7QPQgDKBUTBAZy9MyzqP4IiMVe8tym3zsW3MrogiAqFlA" />
+              </div>
+            </div>
+            <div class="mt-4 px-2">
+              <h4 class="text-lg font-bold text-primary">Serene Sanctuary Reset</h4>
+              <div class="flex items-center text-secondary gap-1 mt-1">
+                <span class="material-symbols-outlined text-sm">schedule</span>
+                <span class="text-xs font-bold uppercase">4 Hour Session</span>
+              </div>
+            </div>
+          </div>
+          <div class="bg-primary rounded-5xl p-8 text-on-primary flex flex-col justify-center">
+            <h4 class="text-2xl font-headline font-bold mb-2 italic">"Vicky's doesn't just clean, they give you your time back."</h4>
+            <p class="text-on-primary-container text-sm font-medium">-- The Editorial Standard</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== REVIEWS ==================== -->
+    <section class="max-w-7xl mx-auto px-6 py-24" id="reviews">
+      <div class="text-center mb-16">
+        <h2 class="text-4xl font-headline font-extrabold text-primary mb-4 tracking-tight">Our Clients Say It Best</h2>
+        <div class="flex justify-center gap-1 text-secondary">
+          <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+          <span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">star</span>
+        </div>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="bg-surface-container-lowest p-8 rounded-4xl shadow-sm border border-outline-variant/5 flex flex-col gap-6 hover:shadow-xl transition-shadow duration-300">
+          <div class="flex items-center gap-4">
+            <img alt="Sarah Mitchell" class="w-14 h-14 rounded-full object-cover ring-2 ring-primary/10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDgQZvUi8Evb4uoYtAq7rz-INsEPm-Ca3I3RWb_CF4ZqlOHiEikkTFlhOn9mS6E1Krkajmoy8hAVm3IuWj6OYT-nnoE2VN93DjjjkReMIoJog0EeLPySoVgp8PK0dfwSd3_cOTmg1ytS2TrZ7CeESOgOXJyexvTEZxu7XurL13imV88Q4REWPpASaQ-VzrkGDqdK1WLBX5CqNd7TrG5I5UEwfWpDeQzVErxHoB1elg5dmqLfHedFqV9YWCal-Roh3JYcWW1R8key8Q" />
+            <div>
+              <h5 class="font-bold text-primary">Sarah Mitchell</h5>
+              <p class="text-xs font-bold uppercase tracking-widest text-secondary">Verified Customer</p>
+            </div>
+          </div>
+          <p class="text-on-surface-variant italic leading-relaxed">"The attention to detail is staggering. They even organized my vanity in a way that looks like a magazine spread. Truly elite service."</p>
+        </div>
+        <div class="bg-surface-container-lowest p-8 rounded-4xl shadow-sm border border-outline-variant/5 flex flex-col gap-6 hover:shadow-xl transition-shadow duration-300">
+          <div class="flex items-center gap-4">
+            <img alt="David Richardson" class="w-14 h-14 rounded-full object-cover ring-2 ring-primary/10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD3U2XBLCZ9gafAOscuKXQFAIPfNJ-WT1kyp6xfc-G0BMaN4ojlAtNJG0dmbVYR-H0KYNzWsZRCfUY8pSNapYWE66S806zRlAksN8r1m6mdLIgylKFrvuq9gwXEdtFiVRmNkFbOezKoIspff8rx7CMEduDr31siWjWmoKDvTmamYi-o6C4zqOtabvIjSs6syjDnur4jvoCDetf2pftOZlXwj9cfRtSbAB9a23WF3-mnOxkMLtgw5r7U3SUI1z92SnT2F_hbRyDl2GY" />
+            <div>
+              <h5 class="font-bold text-primary">David Richardson</h5>
+              <p class="text-xs font-bold uppercase tracking-widest text-secondary">Verified Customer</p>
+            </div>
+          </div>
+          <p class="text-on-surface-variant italic leading-relaxed">"I've tried five different services in the city. Vicky's is the only one that consistently delivers that 'new home' smell and feel every single time."</p>
+        </div>
+        <div class="bg-surface-container-lowest p-8 rounded-4xl shadow-sm border border-outline-variant/5 flex flex-col gap-6 hover:shadow-xl transition-shadow duration-300">
+          <div class="flex items-center gap-4">
+            <img alt="Elena Gonsalves" class="w-14 h-14 rounded-full object-cover ring-2 ring-primary/10" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA2TyjyS-9cVqApmy9IHdzhdCofkl-uikWWx5fEKG08nO0zCa_Ii8ugOFA4LfGh8g31dYaoIif_pUxUGPxZLen7t-tRLorwsKVfhRbJM3ilYhJsapze77XwQDbjeT_kb9FLb1jMk7l5m8GSx0umV9qdafgIOtWFxmzornC5Dh4zkKKNTCpYgNc2q6kbwp7RTpmKnlFkL_4JlTNXXXZB3-WDI9ZreugCwu64oZSW016_Mj_EWZaUSqWBrAXnwCoBncFXYjTG5vXgdxI" />
+            <div>
+              <h5 class="font-bold text-primary">Elena Gonsalves</h5>
+              <p class="text-xs font-bold uppercase tracking-widest text-secondary">Verified Customer</p>
+            </div>
+          </div>
+          <p class="text-on-surface-variant italic leading-relaxed">"Punctual, professional, and precise. They managed to remove stains from my kitchen floor that I thought were permanent. Incredible work!"</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== BOOKING CTA ==================== -->
+    <section class="py-24 px-6" id="book">
+      <div class="max-w-5xl mx-auto bg-gradient-to-r from-primary to-primary-container rounded-6xl p-12 md:p-20 text-center relative overflow-hidden">
+        <div class="z-10 relative">
+          <h2 class="font-headline text-4xl md:text-6xl font-extrabold text-white mb-8 tracking-tight">Ready for a spotless home?</h2>
+          <p class="text-on-primary-container text-lg md:text-xl mb-12 max-w-2xl mx-auto">Join hundreds of happy customers who trust Vicky's for their cleaning needs. Book your first session today and save 15%.</p>
+          <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="tel:6263788465" class="bg-secondary text-white px-10 py-5 rounded-full font-bold text-lg shadow-xl shadow-secondary/20 hover:scale-105 active:scale-95 transition-all inline-block">
+              Call to Book
+            </a>
+            <a href="mailto:support@vickys.com" class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-10 py-5 rounded-full font-bold text-lg hover:bg-white/20 transition-all inline-block">
+              Email Us
+            </a>
+          </div>
+        </div>
+        <div class="absolute top-10 left-10 opacity-20">
+          <span class="material-symbols-outlined text-6xl text-white" style="font-variation-settings: 'FILL' 1;">sparkle</span>
+        </div>
+        <div class="absolute bottom-10 right-10 opacity-20">
+          <span class="material-symbols-outlined text-8xl text-white" style="font-variation-settings: 'FILL' 1;">sparkle</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-[#501F72] text-white pt-16 pb-8">
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-center px-8 w-full max-w-7xl mx-auto mb-12 border-b border-white/10 pb-12">
+      <div class="mb-8 md:mb-0">
+        <div class="flex items-center gap-2 mb-4">
+          <span class="material-symbols-outlined text-[#63DDA2]">clean_hands</span>
+          <span class="text-2xl font-bold font-headline">Vicky's</span>
+        </div>
+        <p class="text-white/70 max-w-xs font-body text-sm tracking-wide">Professional maid services that bring the luxury of a pristine home to your everyday life.</p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div class="flex flex-col gap-4">
+          <span class="font-bold text-white mb-2">Services</span>
+          <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="#services">Standard Clean</a>
+          <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="#services">Deep Clean</a>
+          <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="#services">Office Cleaning</a>
+        </div>
+        <div class="flex flex-col gap-4">
+          <span class="font-bold text-white mb-2">Company</span>
+          <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="#about">About Us</a>
+          <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="#reviews">Reviews</a>
+        </div>
+        <div class="flex flex-col gap-4">
+          <span class="font-bold text-white mb-2">Legal</span>
+          <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="#">Privacy Policy</a>
+          <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="#">Terms of Service</a>
+        </div>
+        <div class="flex flex-col gap-4">
+          <span class="font-bold text-white mb-2">Contact</span>
+          <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="mailto:support@vickys.com">support@vickys.com</a>
+          <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="tel:6263788465">(626) 378-8465</a>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col md:flex-row justify-between items-center px-8 w-full max-w-7xl mx-auto text-[#FFF7FD]/50 font-body text-xs uppercase tracking-widest">
+      <p>&copy; 2025 Vicky's Professional Maid Services. All rights reserved.</p>
+      <div class="flex gap-6 mt-4 md:mt-0">
+        <a class="hover:text-[#63DDA2] transition-colors" href="#">Instagram</a>
+        <a class="hover:text-[#63DDA2] transition-colors" href="#">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
