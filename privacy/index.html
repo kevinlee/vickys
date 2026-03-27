@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Privacy Policy | Vicky's Professional Maid Services</title>
+  <meta name="description" content="Privacy policy for Vicky's Professional Maid Services. How we collect, use, and protect your personal information." />
+  <link rel="canonical" href="https://vickys.vercel.app/privacy" />
+  <meta property="og:title" content="Privacy Policy | Vicky's Professional Maid Services" />
+  <meta property="og:description" content="Privacy policy for Vicky's Professional Maid Services. How we collect, use, and protect your personal information." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧹</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#501f72",
+            "on-primary": "#ffffff",
+            "primary-container": "#69388b",
+            "on-primary-container": "#dfadff",
+            "primary-fixed": "#f3daff",
+            "primary-fixed-dim": "#e3b5ff",
+            "secondary": "#006d3d",
+            "on-secondary": "#ffffff",
+            "secondary-container": "#97f3b5",
+            "on-secondary-container": "#047240",
+            "secondary-fixed": "#9af6b8",
+            "secondary-fixed-dim": "#7ed99e",
+            "on-secondary-fixed": "#00210f",
+            "on-secondary-fixed-variant": "#00522d",
+            "tertiary": "#004125",
+            "tertiary-container": "#005b36",
+            "on-tertiary-container": "#74d49b",
+            "tertiary-fixed-dim": "#7adaa1",
+            "surface": "#fff7fd",
+            "on-surface": "#1e1a20",
+            "surface-variant": "#e9e0e8",
+            "on-surface-variant": "#4c444f",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#faf1f9",
+            "surface-container": "#f4ebf3",
+            "surface-container-high": "#efe5ee",
+            "surface-container-highest": "#e9e0e8",
+            "surface-dim": "#e0d7df",
+            "surface-tint": "#7a489c",
+            "outline": "#7d7481",
+            "outline-variant": "#cfc3d1",
+            "inverse-surface": "#332f35",
+            "inverse-on-surface": "#f7eef6",
+            "inverse-primary": "#e3b5ff",
+            "error": "#ba1a1a",
+            "on-error": "#ffffff",
+            "error-container": "#ffdad6",
+            "on-error-container": "#93000a",
+            "background": "#fff7fd",
+            "on-background": "#1e1a20",
+          },
+          fontFamily: {
+            headline: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            body: ['"Manrope"', 'system-ui', 'sans-serif'],
+          },
+          borderRadius: {
+            '4xl': '2rem',
+            '5xl': '2.5rem',
+            '6xl': '3rem',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    body { font-family: "Manrope", system-ui, sans-serif; }
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    .editorial-shadow { box-shadow: 0 8px 40px rgba(80,31,114,0.08); }
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    html { scroll-padding-top: 80px; }
+  </style>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+
+  <!-- ==================== NAVBAR ==================== -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-outline-variant/20">
+    <nav class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <a href="/" class="flex items-center gap-2">
+        <span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">clean_hands</span>
+        <span class="text-xl font-bold font-headline text-primary">Vicky's</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a class="text-on-surface-variant font-medium hover:text-primary transition-colors" href="/">Home</a>
+        <a class="text-on-surface-variant font-medium hover:text-primary transition-colors" href="/services/">Services</a>
+        <a class="text-on-surface-variant font-medium hover:text-primary transition-colors" href="/reviews/">Reviews</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="/book/" class="hidden md:inline-block bg-primary text-on-primary px-6 py-2.5 rounded-full font-headline font-bold text-sm tracking-wide active:scale-95 duration-150 shadow-lg shadow-primary/20 transition-transform">
+          Book Now
+        </a>
+        <!-- Mobile Hamburger -->
+        <button id="mobile-menu-btn" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle navigation menu">
+          <span class="block w-6 h-0.5 bg-on-surface transition-all duration-300" id="bar1"></span>
+          <span class="block w-6 h-0.5 bg-on-surface transition-all duration-300" id="bar2"></span>
+          <span class="block w-6 h-0.5 bg-on-surface transition-all duration-300" id="bar3"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-surface/95 backdrop-blur-xl border-t border-outline-variant/20 px-6 py-6">
+      <div class="flex flex-col gap-4">
+        <a class="text-on-surface-variant font-medium hover:text-primary transition-colors text-lg" href="/">Home</a>
+        <a class="text-on-surface-variant font-medium hover:text-primary transition-colors text-lg" href="/services/">Services</a>
+        <a class="text-on-surface-variant font-medium hover:text-primary transition-colors text-lg" href="/reviews/">Reviews</a>
+        <a href="/book/" class="bg-primary text-on-primary px-6 py-3 rounded-full font-headline font-bold text-sm tracking-wide text-center mt-2">
+          Book Now
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-20">
+
+    <!-- ==================== PAGE HEADER ==================== -->
+    <section class="bg-surface-container-low py-16 md:py-24">
+      <div class="max-w-3xl mx-auto px-6">
+        <h1 class="text-4xl md:text-5xl font-headline font-extrabold text-primary tracking-tight mb-4">Privacy Policy</h1>
+        <p class="text-on-surface-variant text-lg">Last updated: March 26, 2026</p>
+      </div>
+    </section>
+
+    <!-- ==================== CONTENT ==================== -->
+    <section class="py-16 md:py-24">
+      <div class="max-w-3xl mx-auto px-6 space-y-12">
+
+        <!-- 1. Information We Collect -->
+        <div class="bg-surface-container-low rounded-3xl p-8 md:p-12">
+          <h2 class="text-2xl font-bold font-headline text-primary mb-4">1. Information We Collect</h2>
+          <ul class="text-on-surface-variant leading-relaxed space-y-2 list-disc list-inside">
+            <li>Contact information you provide via our booking form: name, email, phone number, address</li>
+            <li>Service preferences and scheduling details</li>
+            <li>We do not collect payment information through our website</li>
+          </ul>
+        </div>
+
+        <!-- 2. How We Use Your Information -->
+        <div class="bg-surface-container-low rounded-3xl p-8 md:p-12">
+          <h2 class="text-2xl font-bold font-headline text-primary mb-4">2. How We Use Your Information</h2>
+          <ul class="text-on-surface-variant leading-relaxed space-y-2 list-disc list-inside">
+            <li>To respond to your inquiries and booking requests</li>
+            <li>To schedule and provide cleaning services</li>
+            <li>To communicate about your service appointments</li>
+            <li>To improve our services</li>
+          </ul>
+        </div>
+
+        <!-- 3. Information Sharing -->
+        <div class="bg-surface-container-low rounded-3xl p-8 md:p-12">
+          <h2 class="text-2xl font-bold font-headline text-primary mb-4">3. Information Sharing</h2>
+          <ul class="text-on-surface-variant leading-relaxed space-y-2 list-disc list-inside">
+            <li>We do not sell, trade, or rent your personal information to third parties</li>
+            <li>We may share your information with our cleaning staff solely to provide the requested services</li>
+          </ul>
+        </div>
+
+        <!-- 4. Cookies & Analytics -->
+        <div class="bg-surface-container-low rounded-3xl p-8 md:p-12">
+          <h2 class="text-2xl font-bold font-headline text-primary mb-4">4. Cookies &amp; Analytics</h2>
+          <ul class="text-on-surface-variant leading-relaxed space-y-2 list-disc list-inside">
+            <li>Our website uses Vercel Web Analytics, a privacy-friendly analytics service that does not use cookies and does not track individual users</li>
+            <li>No third-party advertising cookies are used</li>
+          </ul>
+        </div>
+
+        <!-- 5. Data Security -->
+        <div class="bg-surface-container-low rounded-3xl p-8 md:p-12">
+          <h2 class="text-2xl font-bold font-headline text-primary mb-4">5. Data Security</h2>
+          <ul class="text-on-surface-variant leading-relaxed space-y-2 list-disc list-inside">
+            <li>We implement reasonable security measures to protect your personal information</li>
+            <li>Form submissions are processed through Web3Forms, a secure form handling service</li>
+          </ul>
+        </div>
+
+        <!-- 6. Your Rights -->
+        <div class="bg-surface-container-low rounded-3xl p-8 md:p-12">
+          <h2 class="text-2xl font-bold font-headline text-primary mb-4">6. Your Rights</h2>
+          <ul class="text-on-surface-variant leading-relaxed space-y-2 list-disc list-inside">
+            <li>You may request access to, correction of, or deletion of your personal information</li>
+            <li>Contact us at <a href="mailto:support@vickys.com" class="text-primary font-medium hover:underline">support@vickys.com</a> or <a href="tel:6263788465" class="text-primary font-medium hover:underline">(626) 378-8465</a></li>
+          </ul>
+        </div>
+
+        <!-- 7. Contact Us -->
+        <div class="bg-surface-container-low rounded-3xl p-8 md:p-12">
+          <h2 class="text-2xl font-bold font-headline text-primary mb-4">7. Contact Us</h2>
+          <div class="text-on-surface-variant leading-relaxed space-y-2">
+            <p class="font-semibold text-on-surface">Vicky's Professional Maid Services</p>
+            <p>Email: <a href="mailto:support@vickys.com" class="text-primary font-medium hover:underline">support@vickys.com</a></p>
+            <p>Phone: <a href="tel:6263788465" class="text-primary font-medium hover:underline">(626) 378-8465</a></p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-[#501F72] text-white pt-16 pb-8">
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-center px-8 w-full max-w-7xl mx-auto mb-12 border-b border-white/10 pb-12">
+      <div class="mb-8 md:mb-0">
+        <a href="/" class="flex items-center gap-2 mb-4">
+          <span class="material-symbols-outlined text-[#63DDA2]">clean_hands</span>
+          <span class="text-2xl font-bold font-headline">Vicky's</span>
+        </a>
+        <p class="text-white/70 max-w-xs font-body text-sm tracking-wide">Professional maid services that bring the luxury of a pristine home to your everyday life.</p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div class="flex flex-col gap-4">
+          <span class="font-bold text-white mb-2">Services</span>
+          <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="/services/#pricing">Standard Clean</a>
+          <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="/services/#pricing">Deep Clean</a>
+          <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="/services/#pricing">Office Cleaning</a>
+        </div>
+        <div class="flex flex-col gap-4">
+          <span class="font-bold text-white mb-2">Company</span>
+          <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="/">Home</a>
+          <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="/reviews/">Reviews</a>
+        </div>
+        <div class="flex flex-col gap-4">
+          <span class="font-bold text-white mb-2">Legal</span>
+          <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="/privacy/">Privacy Policy</a>
+          <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="/terms/">Terms of Service</a>
+        </div>
+        <div class="flex flex-col gap-4">
+          <span class="font-bold text-white mb-2">Contact</span>
+          <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="mailto:support@vickys.com">support@vickys.com</a>
+          <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="tel:6263788465">(626) 378-8465</a>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col md:flex-row justify-between items-center px-8 w-full max-w-7xl mx-auto text-[#FFF7FD]/50 font-body text-xs uppercase tracking-widest">
+      <p>&copy; 2025 Vicky's Professional Maid Services. All rights reserved.</p>
+      <div class="flex gap-6 mt-4 md:mt-0">
+        <a class="hover:text-[#63DDA2] transition-colors" href="#">Instagram</a>
+        <a class="hover:text-[#63DDA2] transition-colors" href="#">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== SCRIPTS ==================== -->
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const bar1 = document.getElementById('bar1');
+    const bar2 = document.getElementById('bar2');
+    const bar3 = document.getElementById('bar3');
+    let menuOpen = false;
+
+    menuBtn.addEventListener('click', () => {
+      menuOpen = !menuOpen;
+      mobileMenu.classList.toggle('hidden');
+      if (menuOpen) {
+        bar1.style.transform = 'rotate(45deg) translate(4px, 4px)';
+        bar2.style.opacity = '0';
+        bar3.style.transform = 'rotate(-45deg) translate(4px, -4px)';
+      } else {
+        bar1.style.transform = '';
+        bar2.style.opacity = '';
+        bar3.style.transform = '';
+      }
+    });
+  </script>
+
+</body>
+</html>

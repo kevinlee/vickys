@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Terms of Service | Vicky's Professional Maid Services</title>
+  <meta name="description" content="Terms of service for Vicky's Professional Maid Services. Service agreements, cancellation policy, and satisfaction guarantee." />
+  <link rel="canonical" href="https://vickys.vercel.app/terms" />
+  <meta property="og:title" content="Terms of Service | Vicky's Professional Maid Services" />
+  <meta property="og:description" content="Terms of service for Vicky's Professional Maid Services. Service agreements, cancellation policy, and satisfaction guarantee." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧹</text></svg>" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#501f72",
+            "on-primary": "#ffffff",
+            "primary-container": "#69388b",
+            "on-primary-container": "#dfadff",
+            "primary-fixed": "#f3daff",
+            "primary-fixed-dim": "#e3b5ff",
+            "secondary": "#006d3d",
+            "on-secondary": "#ffffff",
+            "secondary-container": "#97f3b5",
+            "on-secondary-container": "#047240",
+            "secondary-fixed": "#9af6b8",
+            "secondary-fixed-dim": "#7ed99e",
+            "on-secondary-fixed": "#00210f",
+            "on-secondary-fixed-variant": "#00522d",
+            "tertiary": "#004125",
+            "tertiary-container": "#005b36",
+            "on-tertiary-container": "#74d49b",
+            "tertiary-fixed-dim": "#7adaa1",
+            "surface": "#fff7fd",
+            "on-surface": "#1e1a20",
+            "surface-variant": "#e9e0e8",
+            "on-surface-variant": "#4c444f",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#faf1f9",
+            "surface-container": "#f4ebf3",
+            "surface-container-high": "#efe5ee",
+            "surface-container-highest": "#e9e0e8",
+            "surface-dim": "#e0d7df",
+            "surface-tint": "#7a489c",
+            "outline": "#7d7481",
+            "outline-variant": "#cfc3d1",
+            "inverse-surface": "#332f35",
+            "inverse-on-surface": "#f7eef6",
+            "inverse-primary": "#e3b5ff",
+            "error": "#ba1a1a",
+            "on-error": "#ffffff",
+            "error-container": "#ffdad6",
+            "on-error-container": "#93000a",
+            "background": "#fff7fd",
+            "on-background": "#1e1a20",
+          },
+          fontFamily: {
+            headline: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            body: ['"Manrope"', 'system-ui', 'sans-serif'],
+          },
+          borderRadius: {
+            '4xl': '2rem',
+            '5xl': '2.5rem',
+            '6xl': '3rem',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    body { font-family: "Manrope", system-ui, sans-serif; }
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    .editorial-shadow { box-shadow: 0 8px 40px rgba(80,31,114,0.08); }
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    html { scroll-padding-top: 80px; }
+  </style>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+
+  <!-- ==================== NAVBAR ==================== -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-outline-variant/20">
+    <nav class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <a href="/" class="flex items-center gap-2">
+        <span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">clean_hands</span>
+        <span class="text-xl font-bold font-headline text-primary">Vicky's</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a class="text-on-surface-variant font-medium hover:text-primary transition-colors" href="/">Home</a>
+        <a class="text-on-surface-variant font-medium hover:text-primary transition-colors" href="/services/">Services</a>
+        <a class="text-on-surface-variant font-medium hover:text-primary transition-colors" href="/reviews/">Reviews</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="/book/" class="hidden md:inline-block bg-primary text-on-primary px-6 py-2.5 rounded-full font-headline font-bold text-sm tracking-wide active:scale-95 duration-150 shadow-lg shadow-primary/20 transition-transform">
+          Book Now
+        </a>
+        <!-- Mobile Hamburger -->
+        <button id="mobile-menu-btn" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle navigation menu">
+          <span class="block w-6 h-0.5 bg-on-surface transition-all duration-300" id="bar1"></span>
+          <span class="block w-6 h-0.5 bg-on-surface transition-all duration-300" id="bar2"></span>
+          <span class="block w-6 h-0.5 bg-on-surface transition-all duration-300" id="bar3"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-surface/95 backdrop-blur-xl border-t border-outline-variant/20 px-6 py-6">
+      <div class="flex flex-col gap-4">
+        <a class="text-on-surface-variant font-medium hover:text-primary transition-colors text-lg" href="/">Home</a>
+        <a class="text-on-surface-variant font-medium hover:text-primary transition-colors text-lg" href="/services/">Services</a>
+        <a class="text-on-surface-variant font-medium hover:text-primary transition-colors text-lg" href="/reviews/">Reviews</a>
+        <a href="/book/" class="bg-primary text-on-primary px-6 py-3 rounded-full font-headline font-bold text-sm tracking-wide text-center mt-2">
+          Book Now
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-20">
+
+    <!-- ==================== PAGE HEADER ==================== -->
+    <section class="bg-surface-container-low py-16 md:py-24">
+      <div class="max-w-3xl mx-auto px-6">
+        <h1 class="text-4xl md:text-5xl font-headline font-extrabold text-primary tracking-tight mb-4">Terms of Service</h1>
+        <p class="text-on-surface-variant text-lg">Last updated: March 26, 2026</p>
+      </div>
+    </section>
+
+    <!-- ==================== CONTENT ==================== -->
+    <section class="py-16 md:py-24">
+      <div class="max-w-3xl mx-auto px-6 space-y-12">
+
+        <!-- 1. Service Agreement -->
+        <div class="bg-surface-container-low rounded-3xl p-8 md:p-12">
+          <h2 class="text-2xl font-bold font-headline text-primary mb-4">1. Service Agreement</h2>
+          <ul class="text-on-surface-variant leading-relaxed space-y-2 list-disc list-inside">
+            <li>By booking a cleaning service, you agree to these terms</li>
+            <li>Services are provided at the agreed-upon date, time, and location</li>
+            <li>Access to the property must be provided as arranged</li>
+          </ul>
+        </div>
+
+        <!-- 2. Pricing & Payment -->
+        <div class="bg-surface-container-low rounded-3xl p-8 md:p-12">
+          <h2 class="text-2xl font-bold font-headline text-primary mb-4">2. Pricing &amp; Payment</h2>
+          <ul class="text-on-surface-variant leading-relaxed space-y-2 list-disc list-inside">
+            <li>Standard Clean: Starting at $120 per visit</li>
+            <li>Deep Clean: Starting at $240 per visit</li>
+            <li>Specialized Services: Custom quotes provided upon request</li>
+            <li>Final pricing may vary based on property size and condition</li>
+            <li>Payment is due upon completion of service</li>
+          </ul>
+        </div>
+
+        <!-- 3. Scheduling & Cancellation -->
+        <div class="bg-surface-container-low rounded-3xl p-8 md:p-12">
+          <h2 class="text-2xl font-bold font-headline text-primary mb-4">3. Scheduling &amp; Cancellation</h2>
+          <ul class="text-on-surface-variant leading-relaxed space-y-2 list-disc list-inside">
+            <li>Appointments can be scheduled by phone or through our website</li>
+            <li>Cancellations with 24+ hours notice: no charge</li>
+            <li>Cancellations with less than 24 hours notice: 50% of service fee may apply</li>
+            <li>We will make every effort to accommodate rescheduling requests</li>
+          </ul>
+        </div>
+
+        <!-- 4. The Vicky Guarantee -->
+        <div class="bg-surface-container-low rounded-3xl p-8 md:p-12">
+          <h2 class="text-2xl font-bold font-headline text-primary mb-4">4. The Vicky Guarantee (Satisfaction Policy)</h2>
+          <ul class="text-on-surface-variant leading-relaxed space-y-2 list-disc list-inside">
+            <li>We stand behind the quality of our work</li>
+            <li>If any area is not cleaned to your satisfaction, contact us within 24 hours</li>
+            <li>We will return to address the issue at no additional charge</li>
+            <li>This guarantee applies to all standard and deep cleaning services</li>
+          </ul>
+        </div>
+
+        <!-- 5. Property Access & Security -->
+        <div class="bg-surface-container-low rounded-3xl p-8 md:p-12">
+          <h2 class="text-2xl font-bold font-headline text-primary mb-4">5. Property Access &amp; Security</h2>
+          <ul class="text-on-surface-variant leading-relaxed space-y-2 list-disc list-inside">
+            <li>All team members undergo comprehensive background checks</li>
+            <li>We are fully bonded and insured</li>
+            <li>Keys or access codes provided are stored securely and used only for scheduled services</li>
+            <li>We are not responsible for pre-existing damage to property</li>
+          </ul>
+        </div>
+
+        <!-- 6. Liability -->
+        <div class="bg-surface-container-low rounded-3xl p-8 md:p-12">
+          <h2 class="text-2xl font-bold font-headline text-primary mb-4">6. Liability</h2>
+          <ul class="text-on-surface-variant leading-relaxed space-y-2 list-disc list-inside">
+            <li>We carry comprehensive liability insurance</li>
+            <li>Claims for damage must be reported within 24 hours of service completion</li>
+            <li>We are not liable for damage caused by pre-existing conditions, defective items, or normal wear</li>
+          </ul>
+        </div>
+
+        <!-- 7. Eco-Friendly Commitment -->
+        <div class="bg-surface-container-low rounded-3xl p-8 md:p-12">
+          <h2 class="text-2xl font-bold font-headline text-primary mb-4">7. Eco-Friendly Commitment</h2>
+          <ul class="text-on-surface-variant leading-relaxed space-y-2 list-disc list-inside">
+            <li>We exclusively use non-toxic, pet-safe, and biodegradable cleaning products</li>
+            <li>If you have specific product preferences or allergies, please inform us prior to service</li>
+          </ul>
+        </div>
+
+        <!-- 8. Changes to Terms -->
+        <div class="bg-surface-container-low rounded-3xl p-8 md:p-12">
+          <h2 class="text-2xl font-bold font-headline text-primary mb-4">8. Changes to Terms</h2>
+          <ul class="text-on-surface-variant leading-relaxed space-y-2 list-disc list-inside">
+            <li>We reserve the right to update these terms</li>
+            <li>Continued use of our services constitutes acceptance of updated terms</li>
+          </ul>
+        </div>
+
+        <!-- 9. Contact Us -->
+        <div class="bg-surface-container-low rounded-3xl p-8 md:p-12">
+          <h2 class="text-2xl font-bold font-headline text-primary mb-4">9. Contact Us</h2>
+          <div class="text-on-surface-variant leading-relaxed space-y-2">
+            <p class="font-semibold text-on-surface">Vicky's Professional Maid Services</p>
+            <p>Email: <a href="mailto:support@vickys.com" class="text-primary font-medium hover:underline">support@vickys.com</a></p>
+            <p>Phone: <a href="tel:6263788465" class="text-primary font-medium hover:underline">(626) 378-8465</a></p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-[#501F72] text-white pt-16 pb-8">
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-center px-8 w-full max-w-7xl mx-auto mb-12 border-b border-white/10 pb-12">
+      <div class="mb-8 md:mb-0">
+        <a href="/" class="flex items-center gap-2 mb-4">
+          <span class="material-symbols-outlined text-[#63DDA2]">clean_hands</span>
+          <span class="text-2xl font-bold font-headline">Vicky's</span>
+        </a>
+        <p class="text-white/70 max-w-xs font-body text-sm tracking-wide">Professional maid services that bring the luxury of a pristine home to your everyday life.</p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div class="flex flex-col gap-4">
+          <span class="font-bold text-white mb-2">Services</span>
+          <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="/services/#pricing">Standard Clean</a>
+          <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="/services/#pricing">Deep Clean</a>
+          <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="/services/#pricing">Office Cleaning</a>
+        </div>
+        <div class="flex flex-col gap-4">
+          <span class="font-bold text-white mb-2">Company</span>
+          <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="/">Home</a>
+          <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="/reviews/">Reviews</a>
+        </div>
+        <div class="flex flex-col gap-4">
+          <span class="font-bold text-white mb-2">Legal</span>
+          <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="/privacy/">Privacy Policy</a>
+          <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="/terms/">Terms of Service</a>
+        </div>
+        <div class="flex flex-col gap-4">
+          <span class="font-bold text-white mb-2">Contact</span>
+          <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="mailto:support@vickys.com">support@vickys.com</a>
+          <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="tel:6263788465">(626) 378-8465</a>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col md:flex-row justify-between items-center px-8 w-full max-w-7xl mx-auto text-[#FFF7FD]/50 font-body text-xs uppercase tracking-widest">
+      <p>&copy; 2025 Vicky's Professional Maid Services. All rights reserved.</p>
+      <div class="flex gap-6 mt-4 md:mt-0">
+        <a class="hover:text-[#63DDA2] transition-colors" href="#">Instagram</a>
+        <a class="hover:text-[#63DDA2] transition-colors" href="#">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== SCRIPTS ==================== -->
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const bar1 = document.getElementById('bar1');
+    const bar2 = document.getElementById('bar2');
+    const bar3 = document.getElementById('bar3');
+    let menuOpen = false;
+
+    menuBtn.addEventListener('click', () => {
+      menuOpen = !menuOpen;
+      mobileMenu.classList.toggle('hidden');
+      if (menuOpen) {
+        bar1.style.transform = 'rotate(45deg) translate(4px, 4px)';
+        bar2.style.opacity = '0';
+        bar3.style.transform = 'rotate(-45deg) translate(4px, -4px)';
+      } else {
+        bar1.style.transform = '';
+        bar2.style.opacity = '';
+        bar3.style.transform = '';
+      }
+    });
+  </script>
+
+</body>
+</html>

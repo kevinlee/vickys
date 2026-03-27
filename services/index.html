@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Our Services & Pricing | Vicky's Professional Maid Services</title>
+  <meta name="description" content="Professional house cleaning services in Los Angeles. Standard cleaning from $120, deep cleaning from $240. Eco-friendly products, satisfaction guaranteed." />
+  <link rel="canonical" href="https://vickys.vercel.app/services" />
+  <meta property="og:title" content="Our Services & Pricing | Vicky's Professional Maid Services" />
+  <meta property="og:description" content="Professional house cleaning services in Los Angeles. Standard cleaning from $120, deep cleaning from $240. Eco-friendly products, satisfaction guaranteed." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#501f72",
+            "on-primary": "#ffffff",
+            "primary-container": "#69388b",
+            "on-primary-container": "#dfadff",
+            "primary-fixed": "#f3daff",
+            "primary-fixed-dim": "#e3b5ff",
+            "secondary": "#006d3d",
+            "on-secondary": "#ffffff",
+            "secondary-container": "#97f3b5",
+            "on-secondary-container": "#047240",
+            "secondary-fixed": "#9af6b8",
+            "secondary-fixed-dim": "#7ed99e",
+            "on-secondary-fixed": "#00210f",
+            "on-secondary-fixed-variant": "#00522d",
+            "tertiary": "#004125",
+            "tertiary-container": "#005b36",
+            "on-tertiary-container": "#74d49b",
+            "tertiary-fixed-dim": "#7adaa1",
+            "surface": "#fff7fd",
+            "on-surface": "#1e1a20",
+            "surface-variant": "#e9e0e8",
+            "on-surface-variant": "#4c444f",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#faf1f9",
+            "surface-container": "#f4ebf3",
+            "surface-container-high": "#efe5ee",
+            "surface-container-highest": "#e9e0e8",
+            "surface-dim": "#e0d7df",
+            "surface-tint": "#7a489c",
+            "outline": "#7d7481",
+            "outline-variant": "#cfc3d1",
+            "inverse-surface": "#332f35",
+            "inverse-on-surface": "#f7eef6",
+            "inverse-primary": "#e3b5ff",
+            "error": "#ba1a1a",
+            "on-error": "#ffffff",
+            "error-container": "#ffdad6",
+            "on-error-container": "#93000a",
+            "background": "#fff7fd",
+            "on-background": "#1e1a20",
+          },
+          fontFamily: {
+            headline: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            body: ['"Manrope"', 'system-ui', 'sans-serif'],
+          },
+          borderRadius: {
+            '4xl': '2rem',
+            '5xl': '2.5rem',
+            '6xl': '3rem',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    body { font-family: "Manrope", system-ui, sans-serif; }
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    .editorial-shadow { box-shadow: 0 8px 40px rgba(80,31,114,0.08); }
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    html { scroll-padding-top: 80px; }
+  </style>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+
+  <!-- ==================== NAVBAR ==================== -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-outline-variant/20">
+    <nav class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <a href="/" class="flex items-center gap-2">
+        <span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">clean_hands</span>
+        <span class="text-xl font-bold font-headline text-primary">Vicky's</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a class="text-on-surface-variant font-medium hover:text-primary transition-colors" href="/">Home</a>
+        <a class="text-primary font-bold border-b-2 border-primary pb-0.5" href="/services/">Services</a>
+        <a class="text-on-surface-variant font-medium hover:text-primary transition-colors" href="/reviews/">Reviews</a>
+      </div>
+      <div class="flex items-center gap-4">
+        <a href="/book/" class="hidden md:inline-block bg-primary text-on-primary px-6 py-2.5 rounded-full font-headline font-bold text-sm tracking-wide active:scale-95 duration-150 shadow-lg shadow-primary/20 transition-transform">
+          Book Now
+        </a>
+        <!-- Mobile Hamburger -->
+        <button id="mobile-menu-btn" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Toggle navigation menu">
+          <span class="block w-6 h-0.5 bg-on-surface transition-all duration-300" id="bar1"></span>
+          <span class="block w-6 h-0.5 bg-on-surface transition-all duration-300" id="bar2"></span>
+          <span class="block w-6 h-0.5 bg-on-surface transition-all duration-300" id="bar3"></span>
+        </button>
+      </div>
+    </nav>
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-surface/95 backdrop-blur-xl border-t border-outline-variant/20 px-6 py-6">
+      <div class="flex flex-col gap-4">
+        <a class="text-on-surface-variant font-medium hover:text-primary transition-colors text-lg" href="/">Home</a>
+        <a class="text-primary font-bold text-lg" href="/services/">Services</a>
+        <a class="text-on-surface-variant font-medium hover:text-primary transition-colors text-lg" href="/reviews/">Reviews</a>
+        <a href="/book/" class="bg-primary text-on-primary px-6 py-3 rounded-full font-headline font-bold text-sm tracking-wide text-center mt-2">
+          Book Now
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-20">
+
+    <!-- ==================== HERO BANNER ==================== -->
+    <section class="relative min-h-[60vh] flex items-center overflow-hidden">
+      <div class="absolute inset-0">
+        <img class="w-full h-full object-cover" alt="Sparkling clean kitchen" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRoqYVUeD-wWFJzJVYZtmbCwAosTSfWZ0pYV7GzPIOIjeMFCmhf-8LgR8sIl1yelSao_RzMj6O2LXUuXQM2gQhOMkmqKkpni8k3RlAg7MM0mO_Lbx9Rk5HM8nGY4FPydId0x2H5UAOZ7syLUNE9pYtXVkLwrcYphxSnzL1g79PHtnCaCmNQOmj2lTq6vt3fY7y_6JHW2-ZKclgkXZdw8lg2MvfNT-6-zD-M2zL_YGA50BhoUhLxu6My2IczenOqK44nPllUjvVx18" />
+        <div class="absolute inset-0 bg-gradient-to-r from-primary/90 via-primary/70 to-primary/40"></div>
+      </div>
+      <div class="relative z-10 max-w-7xl mx-auto px-6 w-full py-24">
+        <div class="inline-flex items-center gap-2 bg-white/10 backdrop-blur-md px-4 py-2 rounded-full mb-6">
+          <span class="material-symbols-outlined text-secondary-container text-sm" style="font-variation-settings: 'FILL' 1;">sparkle</span>
+          <span class="text-white/90 font-body text-xs font-bold tracking-widest uppercase">Services &amp; Pricing</span>
+        </div>
+        <h1 class="text-5xl lg:text-7xl font-headline font-extrabold text-white leading-[1.1] mb-6 tracking-tight max-w-3xl">
+          The Science of <span class="text-secondary-container italic">Spotless.</span>
+        </h1>
+        <p class="text-white/80 text-lg lg:text-xl max-w-2xl leading-relaxed">
+          Experience an uncompromising level of cleanliness. From residential sanctuaries to high-performance workspaces.
+        </p>
+      </div>
+    </section>
+
+    <!-- ==================== PRICING CARDS ==================== -->
+    <section class="bg-surface-container-low py-24" id="pricing">
+      <div class="max-w-7xl mx-auto px-6">
+        <div class="text-center mb-20">
+          <h2 class="font-headline text-4xl font-extrabold text-primary mb-4">Precision Cleaning Packages</h2>
+          <p class="text-on-surface-variant max-w-2xl mx-auto">Tailored solutions designed for every square inch of your life. Choose the depth of care your space deserves.</p>
+        </div>
+        <div class="grid md:grid-cols-3 gap-8">
+
+          <!-- Standard Clean -->
+          <div class="bg-surface-container-lowest p-8 rounded-4xl editorial-shadow flex flex-col group hover:-translate-y-2 transition-transform duration-500">
+            <div class="mb-8">
+              <span class="material-symbols-outlined text-4xl text-secondary mb-4">eco</span>
+              <h3 class="font-headline text-2xl font-bold text-primary mb-2">Standard Clean</h3>
+              <p class="text-on-surface-variant text-sm">Essential maintenance for active households.</p>
+            </div>
+            <div class="mb-6">
+              <span class="text-4xl font-extrabold text-primary">$120</span>
+              <span class="text-on-surface-variant">/ visit</span>
+            </div>
+            <div class="flex items-center gap-2 mb-2 text-on-surface-variant text-sm">
+              <span class="material-symbols-outlined text-secondary text-sm">schedule</span>
+              <span class="font-medium">2-3 hours</span>
+            </div>
+            <div class="flex flex-wrap gap-2 mb-8">
+              <span class="bg-surface-container px-3 py-1 rounded-full text-xs font-bold text-on-surface-variant">Weekly</span>
+              <span class="bg-surface-container px-3 py-1 rounded-full text-xs font-bold text-on-surface-variant">Bi-weekly</span>
+              <span class="bg-surface-container px-3 py-1 rounded-full text-xs font-bold text-on-surface-variant">Monthly</span>
+            </div>
+            <ul class="space-y-4 mb-10 flex-grow">
+              <li class="flex items-center gap-3 text-on-surface-variant">
+                <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+                Dusting &amp; surface wiping
+              </li>
+              <li class="flex items-center gap-3 text-on-surface-variant">
+                <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+                Vacuuming &amp; mopping all floors
+              </li>
+              <li class="flex items-center gap-3 text-on-surface-variant">
+                <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+                Bathroom sanitization (toilets, sinks, mirrors)
+              </li>
+              <li class="flex items-center gap-3 text-on-surface-variant">
+                <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+                Kitchen counters &amp; appliance exteriors
+              </li>
+              <li class="flex items-center gap-3 text-on-surface-variant">
+                <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+                Trash removal &amp; bag replacement
+              </li>
+              <li class="flex items-center gap-3 text-on-surface-variant">
+                <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+                Light tidying &amp; organizing
+              </li>
+            </ul>
+            <a href="/book/" class="w-full py-4 rounded-xl border-2 border-primary/10 text-primary font-bold hover:bg-primary hover:text-white transition-all duration-300 text-center block">Book Standard</a>
+          </div>
+
+          <!-- Deep Clean (Featured) -->
+          <div class="bg-primary-container p-8 rounded-4xl editorial-shadow flex flex-col relative overflow-hidden group hover:-translate-y-2 transition-transform duration-500">
+            <div class="absolute top-6 right-6">
+              <span class="bg-secondary text-white text-[10px] font-black px-3 py-1 rounded-full uppercase tracking-widest">Most Popular</span>
+            </div>
+            <div class="mb-8">
+              <span class="material-symbols-outlined text-4xl text-on-tertiary-container mb-4">auto_awesome</span>
+              <h3 class="font-headline text-2xl font-bold text-white mb-2">Deep Clean</h3>
+              <p class="text-on-primary-container text-sm">A thorough restoration for your home.</p>
+            </div>
+            <div class="mb-6">
+              <span class="text-4xl font-extrabold text-white">$240</span>
+              <span class="text-on-primary-container">/ visit</span>
+            </div>
+            <div class="flex items-center gap-2 mb-2 text-on-primary-container text-sm">
+              <span class="material-symbols-outlined text-secondary-container text-sm">schedule</span>
+              <span class="font-medium">4-6 hours</span>
+            </div>
+            <p class="text-on-primary-container/80 text-xs font-medium mb-8">Everything in Standard, plus:</p>
+            <ul class="space-y-4 mb-10 flex-grow">
+              <li class="flex items-center gap-3 text-white">
+                <span class="material-symbols-outlined text-secondary-container text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Baseboards &amp; door frames
+              </li>
+              <li class="flex items-center gap-3 text-white">
+                <span class="material-symbols-outlined text-secondary-container text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Inside oven &amp; microwave
+              </li>
+              <li class="flex items-center gap-3 text-white">
+                <span class="material-symbols-outlined text-secondary-container text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Window tracks &amp; blinds
+              </li>
+              <li class="flex items-center gap-3 text-white">
+                <span class="material-symbols-outlined text-secondary-container text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Deep grout scrubbing
+              </li>
+              <li class="flex items-center gap-3 text-white">
+                <span class="material-symbols-outlined text-secondary-container text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Cabinet exteriors
+              </li>
+              <li class="flex items-center gap-3 text-white">
+                <span class="material-symbols-outlined text-secondary-container text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Light fixture dusting
+              </li>
+              <li class="flex items-center gap-3 text-white">
+                <span class="material-symbols-outlined text-secondary-container text-sm" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+                Behind &amp; under furniture
+              </li>
+            </ul>
+            <a href="/book/" class="w-full py-4 rounded-xl bg-white text-primary font-bold hover:bg-secondary hover:text-white transition-all duration-300 text-center block">Book Deep Clean</a>
+          </div>
+
+          <!-- Specialized Services -->
+          <div class="bg-surface-container-lowest p-8 rounded-4xl editorial-shadow flex flex-col group hover:-translate-y-2 transition-transform duration-500">
+            <div class="mb-8">
+              <span class="material-symbols-outlined text-4xl text-secondary mb-4">business_center</span>
+              <h3 class="font-headline text-2xl font-bold text-primary mb-2">Specialized Services</h3>
+              <p class="text-on-surface-variant text-sm">High-standard commercial &amp; specialty cleaning.</p>
+            </div>
+            <div class="mb-8">
+              <span class="text-4xl font-extrabold text-primary">Custom</span>
+              <span class="text-on-surface-variant">/ quote</span>
+            </div>
+            <ul class="space-y-4 mb-10 flex-grow">
+              <li class="flex items-center gap-3 text-on-surface-variant">
+                <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+                Office sanitization
+              </li>
+              <li class="flex items-center gap-3 text-on-surface-variant">
+                <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+                Post-construction cleanup
+              </li>
+              <li class="flex items-center gap-3 text-on-surface-variant">
+                <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+                Move-in / Move-out cleaning
+              </li>
+              <li class="flex items-center gap-3 text-on-surface-variant">
+                <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+                Event preparation &amp; post-event
+              </li>
+              <li class="flex items-center gap-3 text-on-surface-variant">
+                <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+                Window detailing
+              </li>
+              <li class="flex items-center gap-3 text-on-surface-variant">
+                <span class="material-symbols-outlined text-secondary text-sm">check_circle</span>
+                Carpet deep cleaning
+              </li>
+            </ul>
+            <a href="/book/" class="w-full py-4 rounded-xl border-2 border-primary/10 text-primary font-bold hover:bg-primary hover:text-white transition-all duration-300 text-center block">Get a Quote</a>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== WHY CHOOSE US (BENTO) ==================== -->
+    <section class="py-24 px-6 max-w-7xl mx-auto">
+      <h2 class="font-headline text-4xl font-extrabold text-primary mb-16 text-center">Why Elite Spaces Trust Vicky's</h2>
+      <div class="grid grid-cols-1 md:grid-cols-12 gap-6 h-auto md:h-[600px]">
+        <!-- Unwavering Professionalism (8-col) -->
+        <div class="md:col-span-8 bg-surface-container rounded-3xl p-10 flex flex-col justify-between overflow-hidden relative group">
+          <div class="z-10">
+            <h4 class="font-headline text-3xl font-bold text-primary mb-4">Unwavering Professionalism</h4>
+            <p class="text-on-surface-variant max-w-md leading-relaxed">Our maids are more than cleaners; they are technicians of the home. Every team member undergoes rigorous training and comprehensive background checks.</p>
+          </div>
+          <div class="mt-8 flex gap-4 overflow-x-auto pb-4 no-scrollbar">
+            <div class="flex-shrink-0 bg-white px-6 py-4 rounded-2xl shadow-sm flex items-center gap-3">
+              <span class="material-symbols-outlined text-secondary">verified_user</span>
+              <span class="font-bold text-sm">Bonded &amp; Insured</span>
+            </div>
+            <div class="flex-shrink-0 bg-white px-6 py-4 rounded-2xl shadow-sm flex items-center gap-3">
+              <span class="material-symbols-outlined text-secondary">military_tech</span>
+              <span class="font-bold text-sm">100h+ Training</span>
+            </div>
+          </div>
+          <img class="absolute -right-20 bottom-0 h-3/4 object-contain opacity-20 md:opacity-100 group-hover:scale-105 transition-transform duration-700 pointer-events-none" alt="Professional cleaner" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDv5ujdbwEcixt4aGNqrDmIIfGI2H-iF9O1W4jaMD2vh1gn63z2vF9oE1CSktUyihzeHGmyPTVprjtmgUpnlWBlozYgzJ5D6zPK9QMt4T12cZLCaDpvbZ9Kr3YEPuSXGpSMbU6qui_ltl0vaLkn3Z_IZvMTItkkdhei-Hv5SO8IPeuooLetPv60k0fITQA-rx00UOGUiVnLUuOvhyFgbM7erP7qPzmGWjy95yYbbCaev3K9q8gH4opqy_b_8uNCqPxh_FpSsubL8rM" />
+        </div>
+        <!-- Precision Reliability (4-col, primary bg) -->
+        <div class="md:col-span-4 bg-primary p-10 rounded-3xl flex flex-col justify-center text-white text-center">
+          <span class="material-symbols-outlined text-6xl mb-6 text-secondary-container">schedule</span>
+          <h4 class="font-headline text-3xl font-bold mb-4">Precision Reliability</h4>
+          <p class="text-on-primary-container leading-relaxed">We guarantee arrival within a 15-minute window or your next clean is on us.</p>
+        </div>
+        <!-- Botanical Care (4-col, secondary bg) -->
+        <div class="md:col-span-4 bg-secondary p-10 rounded-3xl flex flex-col justify-end text-white overflow-hidden relative">
+          <div class="z-10">
+            <h4 class="font-headline text-2xl font-bold mb-2">Botanical Care</h4>
+            <p class="text-white/80 text-sm">Only non-toxic, pet-safe, and biodegradable products enter your home.</p>
+          </div>
+          <span class="material-symbols-outlined absolute -top-10 -right-10 text-[200px] opacity-10">nest_eco_leaf</span>
+        </div>
+        <!-- The Vicky Guarantee (8-col) -->
+        <div class="md:col-span-8 bg-surface-container-highest p-10 rounded-3xl flex items-center gap-8">
+          <div class="flex-shrink-0 w-24 h-24 rounded-full bg-white flex items-center justify-center editorial-shadow">
+            <span class="text-3xl font-black text-secondary">100%</span>
+          </div>
+          <div>
+            <h4 class="font-headline text-2xl font-bold text-primary mb-2">The Vicky Guarantee</h4>
+            <p class="text-on-surface-variant">If any area is overlooked, we return within 24 hours -- no questions asked.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== SERVICE AREA ==================== -->
+    <section class="bg-surface-container-low py-24 px-6">
+      <div class="max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+          <div>
+            <div class="inline-flex items-center gap-2 bg-secondary-container/30 px-4 py-2 rounded-full mb-6">
+              <span class="material-symbols-outlined text-on-secondary-container text-sm" style="font-variation-settings: 'FILL' 1;">location_on</span>
+              <span class="text-on-secondary-container font-body text-xs font-bold tracking-widest uppercase">Service Area</span>
+            </div>
+            <h2 class="text-4xl lg:text-5xl font-headline font-extrabold text-primary leading-tight mb-6">Proudly Serving Los Angeles &amp; the San Gabriel Valley</h2>
+            <p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+              From the tree-lined streets of Pasadena to the vibrant neighborhoods of West Covina, we bring our signature standard of clean to homes and businesses across the greater Los Angeles area.
+            </p>
+            <div class="flex flex-wrap gap-3 mb-8">
+              <span class="bg-surface-container-lowest px-4 py-2 rounded-full text-sm font-bold text-primary editorial-shadow">Pasadena</span>
+              <span class="bg-surface-container-lowest px-4 py-2 rounded-full text-sm font-bold text-primary editorial-shadow">Alhambra</span>
+              <span class="bg-surface-container-lowest px-4 py-2 rounded-full text-sm font-bold text-primary editorial-shadow">Arcadia</span>
+              <span class="bg-surface-container-lowest px-4 py-2 rounded-full text-sm font-bold text-primary editorial-shadow">Monrovia</span>
+              <span class="bg-surface-container-lowest px-4 py-2 rounded-full text-sm font-bold text-primary editorial-shadow">Azusa</span>
+              <span class="bg-surface-container-lowest px-4 py-2 rounded-full text-sm font-bold text-primary editorial-shadow">West Covina</span>
+              <span class="bg-surface-container-lowest px-4 py-2 rounded-full text-sm font-bold text-primary editorial-shadow">Glendora</span>
+              <span class="bg-surface-container-lowest px-4 py-2 rounded-full text-sm font-bold text-primary editorial-shadow">Duarte</span>
+            </div>
+            <p class="text-on-surface-variant text-sm">
+              <span class="material-symbols-outlined text-secondary text-sm align-middle mr-1">info</span>
+              We serve locations within a 25-mile radius of Monrovia. Contact us for availability in your area.
+            </p>
+          </div>
+          <div class="bg-surface-container-lowest rounded-4xl p-10 editorial-shadow">
+            <div class="flex items-center gap-4 mb-8">
+              <div class="w-14 h-14 rounded-full bg-primary flex items-center justify-center">
+                <span class="material-symbols-outlined text-white text-2xl">map</span>
+              </div>
+              <div>
+                <h4 class="font-headline font-bold text-primary text-lg">Coverage Map</h4>
+                <p class="text-on-surface-variant text-sm">Greater Los Angeles Region</p>
+              </div>
+            </div>
+            <div class="grid grid-cols-2 gap-6">
+              <div class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-secondary text-sm mt-1">check_circle</span>
+                <div>
+                  <p class="font-bold text-on-surface text-sm">San Gabriel Valley</p>
+                  <p class="text-on-surface-variant text-xs">Full coverage</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-secondary text-sm mt-1">check_circle</span>
+                <div>
+                  <p class="font-bold text-on-surface text-sm">East Los Angeles</p>
+                  <p class="text-on-surface-variant text-xs">Full coverage</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-secondary text-sm mt-1">check_circle</span>
+                <div>
+                  <p class="font-bold text-on-surface text-sm">Inland Empire</p>
+                  <p class="text-on-surface-variant text-xs">Select areas</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-3">
+                <span class="material-symbols-outlined text-secondary text-sm mt-1">check_circle</span>
+                <div>
+                  <p class="font-bold text-on-surface text-sm">Central LA</p>
+                  <p class="text-on-surface-variant text-xs">Select areas</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ==================== FAQ ACCORDION ==================== -->
+    <section class="py-24 px-6 max-w-4xl mx-auto" id="faq">
+      <div class="text-center mb-16">
+        <h2 class="font-headline text-4xl font-extrabold text-primary mb-4">Frequently Asked Questions</h2>
+        <p class="text-on-surface-variant max-w-2xl mx-auto">Everything you need to know about our cleaning services. Can't find what you're looking for? Give us a call.</p>
+      </div>
+      <div class="space-y-4">
+
+        <div class="bg-surface-container-lowest rounded-3xl editorial-shadow overflow-hidden">
+          <button class="faq-toggle w-full flex items-center justify-between px-8 py-6 text-left" aria-expanded="false">
+            <span class="font-headline font-bold text-primary text-lg pr-4">How do I schedule a cleaning?</span>
+            <span class="material-symbols-outlined text-primary transition-transform duration-300 faq-icon flex-shrink-0">expand_more</span>
+          </button>
+          <div class="faq-content hidden px-8 pb-6">
+            <p class="text-on-surface-variant leading-relaxed">You can schedule a cleaning by calling us at <a href="tel:6263788465" class="text-primary font-bold hover:underline">(626) 378-8465</a> or by booking online through our <a href="/book/" class="text-primary font-bold hover:underline">booking page</a>. We'll confirm your appointment within 2 hours.</p>
+          </div>
+        </div>
+
+        <div class="bg-surface-container-lowest rounded-3xl editorial-shadow overflow-hidden">
+          <button class="faq-toggle w-full flex items-center justify-between px-8 py-6 text-left" aria-expanded="false">
+            <span class="font-headline font-bold text-primary text-lg pr-4">What cleaning products do you use?</span>
+            <span class="material-symbols-outlined text-primary transition-transform duration-300 faq-icon flex-shrink-0">expand_more</span>
+          </button>
+          <div class="faq-content hidden px-8 pb-6">
+            <p class="text-on-surface-variant leading-relaxed">We exclusively use non-toxic, pet-safe, and biodegradable cleaning products. Our botanical-grade solutions are tough on grime but gentle on your home, your family, and the environment.</p>
+          </div>
+        </div>
+
+        <div class="bg-surface-container-lowest rounded-3xl editorial-shadow overflow-hidden">
+          <button class="faq-toggle w-full flex items-center justify-between px-8 py-6 text-left" aria-expanded="false">
+            <span class="font-headline font-bold text-primary text-lg pr-4">What is your cancellation policy?</span>
+            <span class="material-symbols-outlined text-primary transition-transform duration-300 faq-icon flex-shrink-0">expand_more</span>
+          </button>
+          <div class="faq-content hidden px-8 pb-6">
+            <p class="text-on-surface-variant leading-relaxed">We require 24-hour notice for free cancellation. Cancellations made less than 24 hours before your scheduled cleaning may be subject to a cancellation fee. We understand life happens -- just give us a call as soon as you can.</p>
+          </div>
+        </div>
+
+        <div class="bg-surface-container-lowest rounded-3xl editorial-shadow overflow-hidden">
+          <button class="faq-toggle w-full flex items-center justify-between px-8 py-6 text-left" aria-expanded="false">
+            <span class="font-headline font-bold text-primary text-lg pr-4">Are your cleaners background-checked?</span>
+            <span class="material-symbols-outlined text-primary transition-transform duration-300 faq-icon flex-shrink-0">expand_more</span>
+          </button>
+          <div class="faq-content hidden px-8 pb-6">
+            <p class="text-on-surface-variant leading-relaxed">Yes, absolutely. Every member of our cleaning team undergoes comprehensive background checks before joining Vicky's. Our entire team is fully bonded and insured for your peace of mind.</p>
+          </div>
+        </div>
+
+        <div class="bg-surface-container-lowest rounded-3xl editorial-shadow overflow-hidden">
+          <button class="faq-toggle w-full flex items-center justify-between px-8 py-6 text-left" aria-expanded="false">
+            <span class="font-headline font-bold text-primary text-lg pr-4">Do I need to be home during the cleaning?</span>
+            <span class="material-symbols-outlined text-primary transition-transform duration-300 faq-icon flex-shrink-0">expand_more</span>
+          </button>
+          <div class="faq-content hidden px-8 pb-6">
+            <p class="text-on-surface-variant leading-relaxed">No, you do not need to be home. Many of our clients provide a spare key, garage code, or smart lock access. Our bonded and insured team treats every home with the utmost care and discretion.</p>
+          </div>
+        </div>
+
+        <div class="bg-surface-container-lowest rounded-3xl editorial-shadow overflow-hidden">
+          <button class="faq-toggle w-full flex items-center justify-between px-8 py-6 text-left" aria-expanded="false">
+            <span class="font-headline font-bold text-primary text-lg pr-4">What areas do you serve?</span>
+            <span class="material-symbols-outlined text-primary transition-transform duration-300 faq-icon flex-shrink-0">expand_more</span>
+          </button>
+          <div class="faq-content hidden px-8 pb-6">
+            <p class="text-on-surface-variant leading-relaxed">We proudly serve Los Angeles and the San Gabriel Valley, including Pasadena, Alhambra, Arcadia, Monrovia, Azusa, West Covina, Glendora, and Duarte. We cover locations within a 25-mile radius of Monrovia. <a href="tel:6263788465" class="text-primary font-bold hover:underline">Call us</a> to check availability in your specific area.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ==================== CTA SECTION ==================== -->
+    <section class="py-24 px-6">
+      <div class="max-w-5xl mx-auto bg-gradient-to-r from-primary to-primary-container rounded-6xl p-12 md:p-20 text-center relative overflow-hidden">
+        <div class="z-10 relative">
+          <h2 class="font-headline text-4xl md:text-6xl font-extrabold text-white mb-8 tracking-tight">Ready for a transformation?</h2>
+          <p class="text-on-primary-container text-lg md:text-xl mb-12 max-w-2xl mx-auto">Join hundreds of happy customers who trust Vicky's for their cleaning needs. Book your first session today.</p>
+          <div class="flex flex-col sm:flex-row justify-center gap-4">
+            <a href="/book/" class="bg-secondary text-white px-10 py-5 rounded-full font-bold text-lg shadow-xl shadow-secondary/20 hover:scale-105 active:scale-95 transition-all inline-block">
+              Book Your Clean
+            </a>
+            <a href="tel:6263788465" class="bg-white/10 backdrop-blur-md text-white border border-white/20 px-10 py-5 rounded-full font-bold text-lg hover:bg-white/20 transition-all inline-block">
+              (626) 378-8465
+            </a>
+          </div>
+        </div>
+        <div class="absolute top-10 left-10 opacity-20">
+          <span class="material-symbols-outlined text-6xl text-white" style="font-variation-settings: 'FILL' 1;">sparkle</span>
+        </div>
+        <div class="absolute bottom-10 right-10 opacity-20">
+          <span class="material-symbols-outlined text-8xl text-white" style="font-variation-settings: 'FILL' 1;">sparkle</span>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-[#501F72] text-white pt-16 pb-8">
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-center px-8 w-full max-w-7xl mx-auto mb-12 border-b border-white/10 pb-12">
+      <div class="mb-8 md:mb-0">
+        <a href="/" class="flex items-center gap-2 mb-4">
+          <span class="material-symbols-outlined text-[#63DDA2]">clean_hands</span>
+          <span class="text-2xl font-bold font-headline">Vicky's</span>
+        </a>
+        <p class="text-white/70 max-w-xs font-body text-sm tracking-wide">Professional maid services that bring the luxury of a pristine home to your everyday life.</p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div class="flex flex-col gap-4">
+          <span class="font-bold text-white mb-2">Services</span>
+          <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="/services/#pricing">Standard Clean</a>
+          <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="/services/#pricing">Deep Clean</a>
+          <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="/services/#pricing">Office Cleaning</a>
+        </div>
+        <div class="flex flex-col gap-4">
+          <span class="font-bold text-white mb-2">Company</span>
+          <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="/">Home</a>
+          <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="/reviews/">Reviews</a>
+        </div>
+        <div class="flex flex-col gap-4">
+          <span class="font-bold text-white mb-2">Legal</span>
+          <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="/privacy/">Privacy Policy</a>
+          <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="/terms/">Terms of Service</a>
+        </div>
+        <div class="flex flex-col gap-4">
+          <span class="font-bold text-white mb-2">Contact</span>
+          <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="mailto:support@vickys.com">support@vickys.com</a>
+          <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="tel:6263788465">(626) 378-8465</a>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col md:flex-row justify-between items-center px-8 w-full max-w-7xl mx-auto text-[#FFF7FD]/50 font-body text-xs uppercase tracking-widest">
+      <p>&copy; 2025 Vicky's Professional Maid Services. All rights reserved.</p>
+      <div class="flex gap-6 mt-4 md:mt-0">
+        <a class="hover:text-[#63DDA2] transition-colors" href="#">Instagram</a>
+        <a class="hover:text-[#63DDA2] transition-colors" href="#">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== SCRIPTS ==================== -->
+  <script>
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const bar1 = document.getElementById('bar1');
+    const bar2 = document.getElementById('bar2');
+    const bar3 = document.getElementById('bar3');
+    let menuOpen = false;
+
+    menuBtn.addEventListener('click', () => {
+      menuOpen = !menuOpen;
+      mobileMenu.classList.toggle('hidden');
+      if (menuOpen) {
+        bar1.style.transform = 'rotate(45deg) translate(4px, 4px)';
+        bar2.style.opacity = '0';
+        bar3.style.transform = 'rotate(-45deg) translate(4px, -4px)';
+      } else {
+        bar1.style.transform = '';
+        bar2.style.opacity = '';
+        bar3.style.transform = '';
+      }
+    });
+
+    // FAQ accordion toggle
+    document.querySelectorAll('.faq-toggle').forEach(button => {
+      button.addEventListener('click', () => {
+        const content = button.nextElementSibling;
+        const icon = button.querySelector('.faq-icon');
+        const isExpanded = button.getAttribute('aria-expanded') === 'true';
+
+        // Close all other FAQs
+        document.querySelectorAll('.faq-toggle').forEach(otherBtn => {
+          if (otherBtn !== button) {
+            otherBtn.setAttribute('aria-expanded', 'false');
+            otherBtn.nextElementSibling.classList.add('hidden');
+            otherBtn.querySelector('.faq-icon').style.transform = '';
+          }
+        });
+
+        // Toggle current FAQ
+        button.setAttribute('aria-expanded', !isExpanded);
+        content.classList.toggle('hidden');
+        icon.style.transform = isExpanded ? '' : 'rotate(180deg)';
+      });
+    });
+  </script>
+
+</body>
+</html>

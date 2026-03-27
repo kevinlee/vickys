@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Cleaning | Vicky's Professional Maid Services</title>
+  <meta name="description" content="Book your professional cleaning service today. Call (626) 378-8465 or fill out our form for a free quote. Serving Los Angeles and the San Gabriel Valley." />
+  <link rel="canonical" href="https://vickys.vercel.app/book" />
+  <meta property="og:title" content="Book a Cleaning | Vicky's Professional Maid Services" />
+  <meta property="og:description" content="Book your professional cleaning service today. Call (626) 378-8465 or fill out our form for a free quote." />
+  <meta property="og:type" content="website" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#501f72",
+            "on-primary": "#ffffff",
+            "primary-container": "#69388b",
+            "on-primary-container": "#dfadff",
+            "primary-fixed": "#f3daff",
+            "primary-fixed-dim": "#e3b5ff",
+            "secondary": "#006d3d",
+            "on-secondary": "#ffffff",
+            "secondary-container": "#97f3b5",
+            "on-secondary-container": "#047240",
+            "secondary-fixed": "#9af6b8",
+            "secondary-fixed-dim": "#7ed99e",
+            "on-secondary-fixed": "#00210f",
+            "on-secondary-fixed-variant": "#00522d",
+            "tertiary": "#004125",
+            "tertiary-container": "#005b36",
+            "on-tertiary-container": "#74d49b",
+            "tertiary-fixed-dim": "#7adaa1",
+            "surface": "#fff7fd",
+            "on-surface": "#1e1a20",
+            "surface-variant": "#e9e0e8",
+            "on-surface-variant": "#4c444f",
+            "surface-container-lowest": "#ffffff",
+            "surface-container-low": "#faf1f9",
+            "surface-container": "#f4ebf3",
+            "surface-container-high": "#efe5ee",
+            "surface-container-highest": "#e9e0e8",
+            "surface-dim": "#e0d7df",
+            "surface-tint": "#7a489c",
+            "outline": "#7d7481",
+            "outline-variant": "#cfc3d1",
+            "inverse-surface": "#332f35",
+            "inverse-on-surface": "#f7eef6",
+            "inverse-primary": "#e3b5ff",
+            "error": "#ba1a1a",
+            "on-error": "#ffffff",
+            "error-container": "#ffdad6",
+            "on-error-container": "#93000a",
+            "background": "#fff7fd",
+            "on-background": "#1e1a20",
+          },
+          fontFamily: {
+            headline: ['"Plus Jakarta Sans"', 'system-ui', 'sans-serif'],
+            body: ['"Manrope"', 'system-ui', 'sans-serif'],
+          },
+          borderRadius: {
+            '4xl': '2rem',
+            '5xl': '2.5rem',
+            '6xl': '3rem',
+          },
+        },
+      },
+    };
+  </script>
+  <style>
+    body { font-family: "Manrope", system-ui, sans-serif; }
+    .material-symbols-outlined { font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24; }
+    .editorial-shadow { box-shadow: 0 8px 40px rgba(80,31,114,0.08); }
+    .no-scrollbar::-webkit-scrollbar { display: none; }
+    .no-scrollbar { -ms-overflow-style: none; scrollbar-width: none; }
+    html { scroll-padding-top: 80px; }
+  </style>
+</head>
+<body class="bg-surface text-on-surface antialiased">
+
+  <!-- ==================== NAVBAR ==================== -->
+  <header class="fixed top-0 left-0 w-full z-50 bg-surface/80 backdrop-blur-xl border-b border-outline-variant/20">
+    <nav class="max-w-7xl mx-auto flex items-center justify-between px-6 py-4">
+      <a href="/" class="flex items-center gap-2">
+        <span class="material-symbols-outlined text-secondary" style="font-variation-settings: 'FILL' 1;">clean_hands</span>
+        <span class="text-xl font-bold font-headline text-primary">Vicky's</span>
+      </a>
+      <div class="hidden md:flex items-center gap-8">
+        <a class="text-on-surface-variant font-medium hover:text-primary transition-colors" href="/">Home</a>
+        <a class="text-on-surface-variant font-medium hover:text-primary transition-colors" href="/services/">Services</a>
+        <a class="text-on-surface-variant font-medium hover:text-primary transition-colors" href="/reviews/">Reviews</a>
+      </div>
+      <a href="/book/" class="hidden md:inline-block bg-primary text-on-primary px-6 py-2.5 rounded-full font-headline font-bold text-sm tracking-wide active:scale-95 duration-150 shadow-lg shadow-primary/20 transition-transform ring-2 ring-primary ring-offset-2 ring-offset-surface">
+        Book Now
+      </a>
+      <!-- Mobile hamburger -->
+      <button id="mobile-menu-btn" class="md:hidden flex flex-col gap-1.5 p-2" aria-label="Open menu">
+        <span class="block w-6 h-0.5 bg-on-surface rounded-full transition-transform" id="burger-top"></span>
+        <span class="block w-6 h-0.5 bg-on-surface rounded-full transition-opacity" id="burger-mid"></span>
+        <span class="block w-6 h-0.5 bg-on-surface rounded-full transition-transform" id="burger-bot"></span>
+      </button>
+    </nav>
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-surface/95 backdrop-blur-xl border-t border-outline-variant/20 px-6 pb-6 pt-4">
+      <div class="flex flex-col gap-4">
+        <a class="text-on-surface-variant font-medium hover:text-primary transition-colors py-2" href="/">Home</a>
+        <a class="text-on-surface-variant font-medium hover:text-primary transition-colors py-2" href="/services/">Services</a>
+        <a class="text-on-surface-variant font-medium hover:text-primary transition-colors py-2" href="/reviews/">Reviews</a>
+        <a href="/book/" class="bg-primary text-on-primary px-6 py-3 rounded-full font-headline font-bold text-sm tracking-wide text-center shadow-lg shadow-primary/20 ring-2 ring-primary ring-offset-2 ring-offset-surface">
+          Book Now
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <main class="pt-20">
+
+    <!-- ==================== SUCCESS BANNER ==================== -->
+    <div id="success-banner" class="hidden">
+      <div class="max-w-7xl mx-auto px-6 pt-8">
+        <div class="bg-secondary-container/30 border border-secondary/20 rounded-2xl p-6 flex items-center gap-4">
+          <span class="material-symbols-outlined text-secondary text-3xl" style="font-variation-settings: 'FILL' 1;">check_circle</span>
+          <div>
+            <h3 class="font-headline font-bold text-primary text-lg">Thank you!</h3>
+            <p class="text-on-surface-variant">We've received your request and will contact you within 2 hours.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== PAGE HEADER ==================== -->
+    <section class="pt-12 pb-8 px-6">
+      <div class="max-w-7xl mx-auto text-center">
+        <div class="inline-flex items-center gap-2 bg-secondary-container/30 px-4 py-2 rounded-full mb-6">
+          <span class="material-symbols-outlined text-on-secondary-container text-sm" style="font-variation-settings: 'FILL' 1;">sparkle</span>
+          <span class="text-on-secondary-container font-body text-xs font-bold tracking-widest uppercase">Free Quote</span>
+        </div>
+        <h1 class="text-4xl lg:text-6xl font-headline font-extrabold text-primary leading-tight mb-4 tracking-tight">Book Your Shine</h1>
+        <p class="text-on-surface-variant text-lg lg:text-xl max-w-xl mx-auto leading-relaxed">Get a free quote or schedule your cleaning in minutes.</p>
+      </div>
+    </section>
+
+    <!-- ==================== CONTACT METHODS ==================== -->
+    <section class="px-6 pb-12">
+      <div class="max-w-3xl mx-auto grid grid-cols-1 sm:grid-cols-2 gap-6">
+        <a href="tel:6263788465" class="bg-surface-container-lowest p-8 rounded-3xl editorial-shadow border border-outline-variant/10 flex flex-col items-center text-center gap-4 hover:-translate-y-1 transition-transform duration-300 group">
+          <div class="w-16 h-16 rounded-full bg-secondary-container/30 flex items-center justify-center">
+            <span class="material-symbols-outlined text-secondary text-3xl" style="font-variation-settings: 'FILL' 1;">call</span>
+          </div>
+          <div>
+            <h3 class="font-headline font-bold text-primary text-lg mb-1">Call Us</h3>
+            <p class="text-primary font-bold text-xl group-hover:text-secondary transition-colors">(626) 378-8465</p>
+            <p class="text-on-surface-variant text-sm mt-2">Available Mon-Sat, 8am-6pm</p>
+          </div>
+        </a>
+        <a href="mailto:support@vickys.com" class="bg-surface-container-lowest p-8 rounded-3xl editorial-shadow border border-outline-variant/10 flex flex-col items-center text-center gap-4 hover:-translate-y-1 transition-transform duration-300 group">
+          <div class="w-16 h-16 rounded-full bg-primary-fixed/40 flex items-center justify-center">
+            <span class="material-symbols-outlined text-primary text-3xl" style="font-variation-settings: 'FILL' 1;">mail</span>
+          </div>
+          <div>
+            <h3 class="font-headline font-bold text-primary text-lg mb-1">Email Us</h3>
+            <p class="text-primary font-bold text-xl group-hover:text-secondary transition-colors">support@vickys.com</p>
+            <p class="text-on-surface-variant text-sm mt-2">We respond within 2 hours</p>
+          </div>
+        </a>
+      </div>
+    </section>
+
+    <!-- ==================== FORM + SIDEBAR ==================== -->
+    <section class="px-6 pb-24">
+      <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8">
+
+        <!-- FORM (2/3 on desktop) -->
+        <div class="lg:col-span-2">
+          <div class="bg-surface-container-low rounded-3xl p-6 md:p-8">
+            <h2 class="font-headline text-2xl font-extrabold text-primary mb-2">Request a Quote</h2>
+            <p class="text-on-surface-variant text-sm mb-8">Fill out the form below and we'll get back to you with a personalized quote.</p>
+
+            <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6" id="booking-form">
+              <!-- Web3Forms access key
+                   IMPORTANT: Replace YOUR_ACCESS_KEY_HERE with your real access key from https://web3forms.com
+                   1. Go to web3forms.com and enter your email
+                   2. You'll receive an access key via email
+                   3. Paste it below to activate the form -->
+              <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+              <!-- Honeypot spam protection -->
+              <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+              <!-- Email subject -->
+              <input type="hidden" name="subject" value="New Booking Request - Vicky's Cleaning">
+              <!-- Redirect after submission -->
+              <input type="hidden" name="redirect" value="https://vickys.vercel.app/book?success=true">
+
+              <!-- Name fields -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                  <label for="first-name" class="block text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">First Name <span class="text-error">*</span></label>
+                  <input type="text" id="first-name" name="first_name" required autocomplete="given-name" placeholder="Jane" class="w-full bg-surface-container-highest border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary/20 text-on-surface placeholder:text-outline font-body" />
+                </div>
+                <div>
+                  <label for="last-name" class="block text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">Last Name <span class="text-error">*</span></label>
+                  <input type="text" id="last-name" name="last_name" required autocomplete="family-name" placeholder="Doe" class="w-full bg-surface-container-highest border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary/20 text-on-surface placeholder:text-outline font-body" />
+                </div>
+              </div>
+
+              <!-- Contact -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                  <label for="email" class="block text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">Email <span class="text-error">*</span></label>
+                  <input type="email" id="email" name="email" required autocomplete="email" placeholder="jane@example.com" class="w-full bg-surface-container-highest border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary/20 text-on-surface placeholder:text-outline font-body" />
+                </div>
+                <div>
+                  <label for="phone" class="block text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">Phone</label>
+                  <input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="(626) 555-0100" class="w-full bg-surface-container-highest border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary/20 text-on-surface placeholder:text-outline font-body" />
+                </div>
+              </div>
+
+              <!-- Service Selection -->
+              <div>
+                <label for="service" class="block text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">Service Type</label>
+                <select id="service" name="service" class="w-full bg-surface-container-highest border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary/20 text-on-surface font-body">
+                  <option value="" disabled selected>Select a service</option>
+                  <option value="Standard Clean ($120)">Standard Clean ($120)</option>
+                  <option value="Deep Clean ($240)">Deep Clean ($240)</option>
+                  <option value="Move-In/Out">Move-In/Out</option>
+                  <option value="Office Cleaning">Office Cleaning</option>
+                  <option value="Other/Not Sure">Other/Not Sure</option>
+                </select>
+              </div>
+
+              <!-- Property Details -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                  <label for="bedrooms" class="block text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">Number of Bedrooms</label>
+                  <select id="bedrooms" name="bedrooms" class="w-full bg-surface-container-highest border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary/20 text-on-surface font-body">
+                    <option value="" disabled selected>Select</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5+">5+</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="bathrooms" class="block text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">Number of Bathrooms</label>
+                  <select id="bathrooms" name="bathrooms" class="w-full bg-surface-container-highest border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary/20 text-on-surface font-body">
+                    <option value="" disabled selected>Select</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4+">4+</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Schedule -->
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                <div>
+                  <label for="preferred-date" class="block text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">Preferred Date</label>
+                  <input type="date" id="preferred-date" name="preferred_date" class="w-full bg-surface-container-highest border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary/20 text-on-surface font-body" />
+                </div>
+                <div>
+                  <label for="preferred-time" class="block text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">Preferred Time</label>
+                  <select id="preferred-time" name="preferred_time" class="w-full bg-surface-container-highest border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary/20 text-on-surface font-body">
+                    <option value="" disabled selected>Select</option>
+                    <option value="Morning (8-11am)">Morning (8-11am)</option>
+                    <option value="Midday (11am-2pm)">Midday (11am-2pm)</option>
+                    <option value="Afternoon (2-5pm)">Afternoon (2-5pm)</option>
+                    <option value="Flexible">Flexible</option>
+                  </select>
+                </div>
+              </div>
+
+              <!-- Address -->
+              <div>
+                <label for="address" class="block text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">Street Address</label>
+                <input type="text" id="address" name="address" autocomplete="street-address" placeholder="123 Main St" class="w-full bg-surface-container-highest border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary/20 text-on-surface placeholder:text-outline font-body" />
+              </div>
+
+              <!-- City, State, Zip -->
+              <div class="grid grid-cols-2 sm:grid-cols-3 gap-6">
+                <div class="col-span-2 sm:col-span-1">
+                  <label for="city" class="block text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">City</label>
+                  <input type="text" id="city" name="city" autocomplete="address-level2" placeholder="Los Angeles" class="w-full bg-surface-container-highest border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary/20 text-on-surface placeholder:text-outline font-body" />
+                </div>
+                <div>
+                  <label for="state" class="block text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">State</label>
+                  <input type="text" id="state" name="state" autocomplete="address-level1" placeholder="CA" maxlength="2" class="w-full bg-surface-container-highest border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary/20 text-on-surface placeholder:text-outline font-body" />
+                </div>
+                <div>
+                  <label for="zip" class="block text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">Zip</label>
+                  <input type="text" id="zip" name="zip" autocomplete="postal-code" placeholder="90001" maxlength="10" class="w-full bg-surface-container-highest border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary/20 text-on-surface placeholder:text-outline font-body" />
+                </div>
+              </div>
+
+              <!-- Message -->
+              <div>
+                <label for="message" class="block text-xs font-bold uppercase tracking-widest text-on-surface-variant mb-2">Special Requests or Notes</label>
+                <textarea id="message" name="message" rows="4" placeholder="Any specific areas of focus, pet information, access instructions, etc." class="w-full bg-surface-container-highest border-none rounded-xl px-4 py-3 focus:ring-2 focus:ring-primary/20 text-on-surface placeholder:text-outline font-body resize-y"></textarea>
+              </div>
+
+              <!-- Submit -->
+              <button type="submit" class="w-full sm:w-auto bg-primary text-on-primary px-10 py-4 rounded-full font-headline font-bold text-lg hover:bg-primary-container transition-colors shadow-xl shadow-primary/20 active:scale-95 duration-150">
+                Request a Quote
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- SIDEBAR (1/3 on desktop) -->
+        <div class="lg:col-span-1 space-y-6">
+
+          <!-- Service Summary Card (sticky on desktop) -->
+          <div class="lg:sticky lg:top-28 space-y-6">
+
+            <div class="bg-surface-container-lowest rounded-3xl p-8 editorial-shadow border border-outline-variant/10">
+              <div class="inline-flex items-center gap-2 bg-secondary-container/30 px-3 py-1.5 rounded-full mb-4">
+                <span class="material-symbols-outlined text-on-secondary-container text-sm" style="font-variation-settings: 'FILL' 1;">sparkle</span>
+                <span class="text-on-secondary-container font-body text-[10px] font-bold tracking-widest uppercase">Free Quote</span>
+              </div>
+              <h3 class="font-headline font-bold text-primary text-lg mb-4">No commitment required</h3>
+              <ul class="space-y-3 mb-6">
+                <li class="flex items-center gap-3 text-on-surface-variant text-sm">
+                  <span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+                  Free, no-obligation quote
+                </li>
+                <li class="flex items-center gap-3 text-on-surface-variant text-sm">
+                  <span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+                  Most customers hear back within 2 hours
+                </li>
+                <li class="flex items-center gap-3 text-on-surface-variant text-sm">
+                  <span class="material-symbols-outlined text-secondary text-base">check_circle</span>
+                  Transparent pricing, no hidden fees
+                </li>
+              </ul>
+              <div class="border-t border-outline-variant/20 pt-4">
+                <p class="text-xs text-on-surface-variant uppercase tracking-widest font-bold mb-2">Prefer to call?</p>
+                <a href="tel:6263788465" class="flex items-center gap-2 text-primary font-bold hover:text-secondary transition-colors">
+                  <span class="material-symbols-outlined text-sm">call</span>
+                  (626) 378-8465
+                </a>
+              </div>
+            </div>
+
+            <!-- Trust Signals -->
+            <div class="bg-surface-container-lowest rounded-3xl p-6 editorial-shadow border border-outline-variant/10 space-y-5">
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded-full bg-secondary-container/30 flex items-center justify-center flex-shrink-0">
+                  <span class="material-symbols-outlined text-secondary text-xl">verified_user</span>
+                </div>
+                <div>
+                  <h4 class="font-headline font-bold text-primary text-sm mb-1">Vetted Professionals</h4>
+                  <p class="text-on-surface-variant text-xs leading-relaxed">Every maid undergoes rigorous background checks</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded-full bg-secondary-container/30 flex items-center justify-center flex-shrink-0">
+                  <span class="material-symbols-outlined text-secondary text-xl">eco</span>
+                </div>
+                <div>
+                  <h4 class="font-headline font-bold text-primary text-sm mb-1">Eco-Friendly</h4>
+                  <p class="text-on-surface-variant text-xs leading-relaxed">Non-toxic, pet-safe, biodegradable products only</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <div class="w-10 h-10 rounded-full bg-secondary-container/30 flex items-center justify-center flex-shrink-0">
+                  <span class="material-symbols-outlined text-secondary text-xl">shield</span>
+                </div>
+                <div>
+                  <h4 class="font-headline font-bold text-primary text-sm mb-1">Satisfaction Guarantee</h4>
+                  <p class="text-on-surface-variant text-xs leading-relaxed">100% satisfaction or we come back free</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ==================== FOOTER ==================== -->
+  <footer class="bg-[#501F72] text-white pt-16 pb-8">
+    <div class="flex flex-col md:flex-row justify-between items-start md:items-center px-8 w-full max-w-7xl mx-auto mb-12 border-b border-white/10 pb-12">
+      <div class="mb-8 md:mb-0">
+        <div class="flex items-center gap-2 mb-4">
+          <span class="material-symbols-outlined text-[#63DDA2]">clean_hands</span>
+          <span class="text-2xl font-bold font-headline">Vicky's</span>
+        </div>
+        <p class="text-white/70 max-w-xs font-body text-sm tracking-wide">Professional maid services that bring the luxury of a pristine home to your everyday life.</p>
+      </div>
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+        <div class="flex flex-col gap-4">
+          <span class="font-bold text-white mb-2">Services</span>
+          <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="/services/">Standard Clean</a>
+          <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="/services/">Deep Clean</a>
+          <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="/services/">Office Cleaning</a>
+        </div>
+        <div class="flex flex-col gap-4">
+          <span class="font-bold text-white mb-2">Company</span>
+          <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="/">About Us</a>
+          <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="/reviews/">Reviews</a>
+        </div>
+        <div class="flex flex-col gap-4">
+          <span class="font-bold text-white mb-2">Legal</span>
+          <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="/privacy/">Privacy Policy</a>
+          <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="/terms/">Terms of Service</a>
+        </div>
+        <div class="flex flex-col gap-4">
+          <span class="font-bold text-white mb-2">Contact</span>
+          <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="mailto:support@vickys.com">support@vickys.com</a>
+          <a class="text-[#FFF7FD]/70 hover:text-white transition-colors text-sm" href="tel:6263788465">(626) 378-8465</a>
+        </div>
+      </div>
+    </div>
+    <div class="flex flex-col md:flex-row justify-between items-center px-8 w-full max-w-7xl mx-auto text-[#FFF7FD]/50 font-body text-xs uppercase tracking-widest">
+      <p>&copy; 2025 Vicky's Professional Maid Services. All rights reserved.</p>
+      <div class="flex gap-6 mt-4 md:mt-0">
+        <a class="hover:text-[#63DDA2] transition-colors" href="#">Instagram</a>
+        <a class="hover:text-[#63DDA2] transition-colors" href="#">Facebook</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ==================== SCRIPTS ==================== -->
+  <script>
+    // Success state: check for ?success=true in URL
+    if (new URLSearchParams(window.location.search).get('success') === 'true') {
+      document.getElementById('success-banner').classList.remove('hidden');
+      document.getElementById('booking-form').classList.add('hidden');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Mobile menu toggle
+    const menuBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const burgerTop = document.getElementById('burger-top');
+    const burgerMid = document.getElementById('burger-mid');
+    const burgerBot = document.getElementById('burger-bot');
+    let menuOpen = false;
+
+    menuBtn.addEventListener('click', () => {
+      menuOpen = !menuOpen;
+      mobileMenu.classList.toggle('hidden');
+      if (menuOpen) {
+        burgerTop.style.transform = 'rotate(45deg) translate(4px, 4px)';
+        burgerMid.style.opacity = '0';
+        burgerBot.style.transform = 'rotate(-45deg) translate(4px, -4px)';
+      } else {
+        burgerTop.style.transform = '';
+        burgerMid.style.opacity = '';
+        burgerBot.style.transform = '';
+      }
+    });
+
+    // Set min date on date picker to today
+    const dateInput = document.getElementById('preferred-date');
+    if (dateInput) {
+      const today = new Date().toISOString().split('T')[0];
+      dateInput.setAttribute('min', today);
+    }
+  </script>
+
+</body>
+</html>
